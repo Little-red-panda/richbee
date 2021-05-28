@@ -137,107 +137,111 @@
 
   <main class="container">
     <h1 class="visually-hidden">Инструменты</h1>
-    
+   
     <div class="breadcrumbs">
       <ul class="breadcrumbs__list">
         <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
         <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог</a></li>
         <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Инструменты</a></li>
-        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]</a></li>
+        <li class="breadcrumbs__item--current"><a href="#" class="breadcrumbs__link breadcrumbs__link--current">Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]</a></li>
       </ul>
     </div>
 
     <section class="product">
-      <h2>Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]</h2>
+      <h2 class="product__title">
+        Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]
+      </h2>
 
-      <div class="product__slider slider">
+      <div class="product__wrapper">
+        <div class="product__slider slider">
          
-        <button class="slider__controller slider__controller--back">
-          <svg width="14" height="8">
-            <use xlink:href="#arrow"></use>
-          </svg>
-        </button>
-        <input type="radio" name="slider" id="slide-1">
-        <label for="slide-1"></label>
-        <input type="radio" name="slider" id="slide-2">
-        <label for="slide-2"></label>
-        <input type="radio" name="slider" id="slide-3">
-        <label for="slide-3"></label>
-        <input type="radio" name="slider" id="slide-4">
-        <label for="slide-4"></label>
-        <input type="radio" name="slider" id="slide-5">
-        <label for="slide-5"></label>
-        <button class="slider__controller slider__controller--next">
-          <svg width="14" height="8">
-            <use xlink:href="#arrow"></use>
-          </svg>
-        </button>
-
-        <div class="slider__slides">
-          <picture>
-            <img srcset="img/1.jpg 1x, img/1@2x.jpg 2x" alt="изображение" class="slider__slide slider__slide-1">
-          </picture>
-
-          <picture>
-            <img srcset="img/2.jpg 1x, img/2@2x.jpg 2x" alt="изображение" class="slider__slide slider__slide-2">
-          </picture>
-
-          <picture>
-            <img srcset="img/3.jpg 1x, img/3@2x.jpg 2x" alt="изображение" class="slider__slide slider__slide-3">
-          </picture>
-
-          <picture>
-            <img srcset="img/4.jpg 1x, img/4@2x.jpg 2x" alt="изображение" class="slider__slide slider__slide-4">
-          </picture>
-
-          <video width="730px" height="450px" class="slider__slide slider__slide-5" controls="controls" poster="img/icon/video.svg">
-            <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-            Видео невозможно воспроизвести в вашем браузере
-          </video>
-        </div>
-
-      </div>
-      
-      <div class="product__info">
-
-        <div class="product__description">
-          <p class="product__code">Внутренний код товара: <span>21215</span></p>
-          <p class="product__article">Артикул: <span>01-094C</span></p>
-          <p>Цена указана за набор инструментов из 94-х предметов</p>
-        </div>
-
-        <div class="product__price">
-          <div class="product__full-price">
-            <p>6 640 ₽</p>
-            <small>ваша цена</small>
+          <button class="slider__controller slider__controller--back">
+            <svg width="14" height="8">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </button>
+          <input type="radio" name="slider" id="slide-1" class="visually-hidden">
+          <label for="slide-1"></label>
+          <input type="radio" name="slider" id="slide-2" checked class="visually-hidden">
+          <label for="slide-2"></label>
+          <input type="radio" name="slider" id="slide-3" class="visually-hidden">
+          <label for="slide-3"></label>
+          <input type="radio" name="slider" id="slide-4" class="visually-hidden">
+          <label for="slide-4"></label>
+          <input type="radio" name="slider" id="slide-5" class="visually-hidden">
+          <label for="slide-5"></label>
+          <button class="slider__controller slider__controller--next">
+            <svg width="14" height="8">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </button>
+  
+          <div class="slider__slides">
+            <picture class="slider__slide slider__slide-1">
+              <img srcset="img/1.jpg 1x, img/1@2x.jpg 2x" alt="изображение">
+            </picture>
+  
+            <picture class="slider__slide slider__slide-2">
+              <img srcset="img/2.jpg 1x, img/2@2x.jpg 2x" alt="изображение">
+            </picture>
+  
+            <picture class="slider__slide slider__slide-3">
+              <img srcset="img/3.jpg 1x, img/3@2x.jpg 2x" alt="изображение">
+            </picture>
+  
+            <picture class="slider__slide slider__slide-4">
+              <img srcset="img/4.jpg 1x, img/4@2x.jpg 2x" alt="изображение">
+            </picture>
+  
+            <video width="730px" height="450px" class="slider__slide slider__slide-5" controls="controls" poster="img/icon/video.svg">
+              <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+              Видео невозможно воспроизвести в вашем браузере
+            </video>
           </div>
-          <div class="product__wholesale-price">
-            <p>5 350 ₽</p>
-            <small>ОПТ</small>
-            <span>
-              <svg width="18" height="18">
-                <use xlink:href="#info"></use>
-              </svg>
-            </span>
-          </div>
-          <button class="product__button button">В корзину</button>
+  
         </div>
-
-        <div class="product__instock">
-          <p class="product__instock-status">В наличии</p>
-          <div class="product__instock-locations">
-            <ul class="product__instock-locations-list">
-              <li class="product__instock-locations-item">
-                <a href="#">На центральном складе</a>
-              </li>
-              <li class="product__instock-locations-item">
-                <a href="#">В 2-х наших магазинах</a>
-              </li>
-            </ul>
+        
+        <div class="product__info">
+  
+          <div class="product__description">
+            <p class="product__code">Внутренний код товара: <span>21215</span></p>
+            <p class="product__article">Артикул: <span>01-094C</span></p>
           </div>
-        </div>
+          <p class="product__text">Цена указана за набор инструментов из 94-х предметов</p>
+          
+          <div class="product__price">
+            <div class="product__full-price">
+              <p>6 640 ₽</p>
+              <small>ваша цена</small>
+            </div>
+            <div class="product__wholesale-price">
+              <p>5 350 ₽</p>
+              <small>опт</small>
+              <span>
+                <svg width="18" height="18">
+                  <use xlink:href="#info"></use>
+                </svg>
+              </span>
+            </div>
+            <button class="product__button button">В корзину</button>
+          </div>
+  
+          <div class="product__instock">
+            <p class="product__instock-status">В наличии</p>
+            <div class="product__instock-locations">
+              <ul class="product__instock-locations-list">
+                <li class="product__instock-locations-item">
+                  <a href="#">На центральном складе</a>
+                </li>
+                <li class="product__instock-locations-item">
+                  <a href="#">В 2-х наших магазинах</a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-      </div>
+        </div>
+      </div> 
     </section>
 
     <section class="tabs">

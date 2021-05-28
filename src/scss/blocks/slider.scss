@@ -1,0 +1,120 @@
+.slider {
+  position: relative;
+  padding-left: 3px;
+}
+
+.slider__controller {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  left: 1.7rem;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #FFFFFF;
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
+
+  svg {
+    margin-bottom: 1px;
+  }
+
+  &--next {
+    top: 42rem;
+    transform: rotate(180deg);
+  }
+  
+}
+
+
+.slider__slides {
+  position: relative;
+  width: 73.1rem;
+  height: 45rem;
+  overflow: hidden;
+
+  margin-left: 7.9rem;
+}
+
+.slider__slide {
+  @include indents();
+  position: absolute;
+  display: block;
+  width: 73.1rem;
+  height: 45rem;
+
+  opacity: 0;
+  z-index: 0;
+
+  transition: ease-in-out .5s;
+
+  img {
+    display: block;
+    height: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+}
+
+.slider label {
+  position: absolute;
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  top: 5.5rem;
+
+  border: 0.1rem solid #EEEEEE;
+
+  background-image: url("../img/1preview.jpg");
+  background-size: auto 3.3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    
+    width: 6rem;
+    height: 6rem;
+
+    transition: ease-in-out .2s;
+  }
+}
+
+#slide-2 + label {
+  top: 5.5rem + 7rem;
+  background-image: url("../img/2preview.jpg");
+}
+#slide-3 + label {
+  top: 5.5rem + 7rem + 7rem;
+  background-image: url("../img/3preview.jpg");
+}
+#slide-4 + label {
+  top: 5.5rem + 7rem + 7rem + 7rem;
+  background-image: url("../img/4preview.jpg");
+}
+#slide-5 + label {
+  top: 5.5rem + 7rem + 7rem + 7rem + 7rem;
+  background-image: url("../img/icon/video.svg");
+}
+
+#slide-1:checked + label::after,
+#slide-2:checked + label::after,
+#slide-3:checked + label::after,
+#slide-4:checked + label::after,
+#slide-5:checked + label::after {
+  border: 0.1rem solid #767676;
+}
+
+#slide-1:checked ~ .slider__slides > .slider__slide-1,
+#slide-2:checked ~ .slider__slides > .slider__slide-2,
+#slide-3:checked ~ .slider__slides > .slider__slide-3,
+#slide-4:checked ~ .slider__slides > .slider__slide-4,
+#slide-5:checked ~ .slider__slides > .slider__slide-5 {
+  opacity: 1;
+  z-index: 1;
+}

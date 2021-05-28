@@ -1,0 +1,36 @@
+.breadcrumbs {
+  @include indents();
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.breadcrumbs__list {
+  @include indents();
+  display: flex;
+  list-style: none;
+
+}
+
+.breadcrumbs__item {
+  position: relative;
+  padding-right: 1.5rem;
+  &::after {
+    content: "/";
+    position: absolute;
+    @include font(1.4rem, 1.6rem, 500);
+    color: #8F8F8F;
+    top: 2px;
+    right: 5px;
+  }
+}
+
+.breadcrumbs__link {
+  @include font(1.4rem, 1.6rem, 400);
+  // display: block;
+  text-decoration: none;
+  color: #8F8F8F;
+  &--current {
+    font-weight: 500;
+    color: #383838;
+  }
+}
