@@ -13,25 +13,26 @@ function html() {
     .pipe(include({
       prefix: '@@'
     }))
-    // .pipe(htmlmin({
-    //   collapseWhitespace: true
-    // }))
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
     .pipe(dest('dist'))
 }
 
 function scss() {
-  return src('src/scss/**.scss')
+  return src('src/scss/index.scss')
     .pipe(sass())
     .pipe(autoprefixer({
       cascade: false
     }))
     .pipe(csso())
     .pipe(concat('index.css'))
+    
     .pipe(dest('dist'))
 }
 
 function clear() {
-  return del('dist')
+  return del('dist/index.html', 'dist/index.scss')
 }
 
 function serve() {
@@ -39,8 +40,8 @@ function serve() {
     server: './dist'
   })
 
-  watch('src/**.html', series(html)).on('change', sync.reload)
-  watch('src/scss/**.scss', series(scss)).on('change', sync.reload)
+  watch('src/**/*.html', series(html)).on('change', sync.reload)
+  watch('src/scss/**/*.scss', series(scss)).on('change', sync.reload)
 }
 
 exports.build = series(clear, scss, html)
