@@ -1,0 +1,170 @@
+.tabs__wrapper {
+  margin-bottom: 8rem;
+  .active {
+   width: 100%;
+   color: #383838;
+   position: relative;
+   &::after {
+     content: "";
+     position: absolute;
+     z-index: 2;
+     width: inherit;
+     height: 0.3rem;
+     bottom: -1.1rem;
+     left: 0rem;
+ 
+     background-color: #FFD637;
+   }
+  }
+}
+
+.tabs__list {
+  @include indents();
+  position: relative;
+  margin-bottom: 4rem;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.1rem;
+    background-color: #DFDFDF;
+    bottom: -1rem;
+    left: 0;
+  }
+}
+
+.tabs__tab {
+  @include indents();
+  @include font(2.2rem, 2.6rem, 500);
+
+  color: #797979;
+
+  cursor: pointer;
+
+  margin-right: 4rem;
+  
+}
+
+.tabs__item {
+  display: none;
+  &:first-child {
+    display: flex;
+  }
+
+}
+.tabs__item-wrapper {
+  @include indents();
+  width: 99.7rem;
+}
+
+.tabs__item-info {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tabs__item-info-title {
+  @include indents();
+  @include font(2rem, 2rem, 500);
+  color: #797979;
+}
+
+.tabs__item-info-text {
+  @include indents();
+  @include font(1.4rem, 1.9rem);
+  color: #0B0B0B;
+  margin-bottom: 2.5rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.tabs__item-instock {
+
+}
+
+.instock-table {
+  @include indents();
+  @include font(1.6rem, 2.1rem, 400);
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  color: #0B0B0B;
+}
+
+.instock-table__title {
+  @include indents();
+  @include font(1.8rem, 2.3rem, 500);
+  
+  text-align: left;
+  color: #797979;
+
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+.instock-table__tr {
+  &:nth-child(2n) {
+    border-radius: 6px;
+    background: #F8F8F8;
+  }
+}
+
+.instock-table__td {
+  padding: 2.5rem 0 2.5rem 2rem;
+
+  &--adres {
+    width: 44%;
+  }
+  &--schedule {
+    width: 20.3%;
+  }
+  &--instock {
+    width: 14.9%;
+    line-height: 1.9rem;
+    color: #32A73C;
+    &_out-of-stock {
+      color: #797979;
+    }
+  }
+  &--phone {
+    width: 20.8%;
+    line-height: 1.9rem;
+  }
+
+  &:first-child {
+    border-top-left-radius: 0.3rem; 
+    border-bottom-left-radius: 0.3rem;
+  }
+  &:last-child {
+    border-bottom-right-radius: 0.3rem; 
+    border-top-right-radius: 0.3rem; 
+  }
+}
+
+.instock-table__td--adres-location {
+  @include indents();
+  @include font(1.8rem, 2.3rem, 500);
+  padding-bottom: 1.5rem 
+}
+
+.instock-table__td--adres-location-adres{
+  @include indents();
+  padding-right: 6rem;
+}
+
+.instock-table__td--schedule-days {
+  @include indents();
+}
+
+.instock-table__td--schedule-hours {
+  @include indents();
+}
+
+// td:first-child {
+//   border-top-left-radius: 0.3rem; 
+//   border-bottom-left-radius: 0.3rem;
+// }
+// td:last-child {
+//   border-bottom-right-radius: 0.3rem; 
+//   border-top-right-radius: 0.3rem; 
+// }
