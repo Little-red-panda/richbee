@@ -49,7 +49,7 @@
 .product__text {
   @include indents();
   @include font(1.3rem, 1.6rem);
-  width: 310px;
+  width: 31rem;
   border-radius: 0.4rem;
   background-color: #F8F8F8;
   color: #383838;
@@ -125,7 +125,7 @@
   position: relative;
   width: 6.8rem;
   
-  border-bottom: 1px dashed;
+  border-bottom: 0.1rem dashed;
   color: #383838;
 
   margin-left: 2.7rem;

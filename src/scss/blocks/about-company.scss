@@ -5,7 +5,7 @@
 
 .about-company__container {
   display: flex;
-  min-height: 45px;
+  min-height: 4.5rem;
   align-items: center;
 }
 
@@ -29,9 +29,9 @@
 
 .about-company__add-call {
   @include indents();
-  @include font(1.4rem, 1.6rem, 500);
+  @include font(1.4rem, 1.6rem, 400);
   
-  border-bottom: 1px dashed;
+  border-bottom: 0.1rem dashed;
   
   text-decoration: none;
   color: #FFD637;
@@ -40,7 +40,7 @@
 }
 
 .about-company__social {
-  margin-right: 34px;
+  margin-right: 2.7rem;
 }
 
 // .about-company__contacts {

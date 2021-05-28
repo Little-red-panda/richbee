@@ -5,14 +5,14 @@
   justify-content: space-around;
   align-items: center;
 
-  min-width: 95px;
+  min-width: 9.5rem;
 
   list-style: none;
 }
 
 .social__item {
   @include indents();
-  padding-right: 15px;
+  padding-right: 1.5rem;
 
   &:last-child {
     padding: 0;

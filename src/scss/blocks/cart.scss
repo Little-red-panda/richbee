@@ -17,7 +17,7 @@
 .cart__icon {
   position: relative;
   height: inherit;
-  padding: 9px 16px 10px 13px;
+  padding: 0.9rem 1.6rem 1rem 1.3rem;
 }
 
 .cart__icon::after {
@@ -25,7 +25,7 @@
   position: absolute;
   width: 0.1rem;
   height: inherit;
-  top: 0px;
+  top: 0;
   left: 5.9rem;
   background-color: #E4E4E4;
 }

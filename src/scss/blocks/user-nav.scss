@@ -17,6 +17,12 @@
   border: 0.1rem solid #ECEDEF;
   border-bottom-left-radius: 0.4rem;
   border-top-left-radius: 0.4rem;
+
+  &::placeholder {
+    @include font(1.4rem, 1.6rem);
+    padding-left: 2rem;
+    color: #B8B8B8;
+  }
 }
 
 .user-nav__search-btn {

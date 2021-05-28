@@ -8,20 +8,22 @@
     position: absolute;
     width: 0.1rem;
     height: 2.4rem;
-    top: -0.5rem;
-    right: 0;
-    background-color: #B8B8B8;
-
+    top: -0.3rem;
+    right: -0.1rem;
+    background-color: #B8B8B8
   }
 }
 
 .main-menu__item {
   @include font(1.4rem, 1.6rem, 700);
+  min-height: inherit;
   padding-right: 2.5rem;
   text-transform: uppercase;
   white-space: nowrap;
   a {
-    color: #383838;
+    min-height: inherit;
+    vertical-align: middle;
     text-decoration: none;
+    color: #383838;
   }
 }
