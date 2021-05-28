@@ -1,0 +1,48 @@
+.about-company {
+  width: 100%;
+  background-color: #383838;
+}
+
+.about-company__container {
+  display: flex;
+  min-height: 45px;
+  align-items: center;
+}
+
+.about-company__info-list {
+  @include indents();
+  
+  display: flex;
+  list-style: none;
+  
+  margin-right: auto;
+}
+
+.about-company__info-list li {
+  @include indents();
+  @include font(1.4rem, 1.6rem, 500);
+
+  color: #B8B8B8;
+
+  padding-right: 2rem;
+}
+
+.about-company__add-call {
+  @include indents();
+  @include font(1.4rem, 1.6rem, 500);
+  
+  border-bottom: 1px dashed;
+  
+  text-decoration: none;
+  color: #FFD637;
+
+  margin-right: 2.7rem;
+}
+
+.about-company__social {
+  margin-right: 34px;
+}
+
+// .about-company__contacts {
+//   margin-left: auto;
+// }

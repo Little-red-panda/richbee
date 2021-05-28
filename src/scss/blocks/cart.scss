@@ -1,0 +1,52 @@
+.cart {
+  width: 18rem;
+  height: 4.8rem;
+  border-radius: 0.4rem;
+
+  background-color: #F8F8F8;
+}
+
+.cart__link {
+  display: flex;
+  width: inherit;
+  height: inherit;
+  align-items: center;
+  text-decoration: none;
+}
+
+.cart__icon {
+  position: relative;
+  height: inherit;
+  padding: 9px 16px 10px 13px;
+}
+
+.cart__icon::after {
+  content: "";
+  position: absolute;
+  width: 0.1rem;
+  height: inherit;
+  top: 0px;
+  left: 5.9rem;
+  background-color: #E4E4E4;
+}
+
+.cart__info {
+  @include indents();
+  @include font(1.3rem, 1.5rem, 500);
+  position: relative;
+  height: inherit;
+  padding-left: 0.9rem;
+}
+
+.cart__price {
+  @include indents();
+  padding-top: 0.7rem;
+  color: #383838;
+}
+
+.cart__counter {
+  @include indents();
+  padding-top: 0.4rem;
+  font-weight: 400;
+  color: #ACACAC;
+}

@@ -1,0 +1,16 @@
+.main-naw__wrapper {
+  @include indents();
+  display: flex;
+  margin-bottom: 3.6rem;
+}
+
+.main-nav__logo {
+  margin-right: 2.8rem;
+}
+
+.main-nav__site-nav {
+  @include indents();
+  min-height: 2.4rem;
+  margin-top: 3.6rem;
+  margin-bottom: 1.8rem;
+}

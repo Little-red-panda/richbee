@@ -1,0 +1,19 @@
+.sub-menu__list {
+  @include indents();
+  display: flex;
+  list-style: none;
+  margin-left: 2.7rem;
+}
+
+.sub-menu__item {
+  @include font(1.4rem, 1.6rem, 400);
+  padding-right: 2.3rem;
+  text-transform: uppercase;
+  &:last-child {
+    padding-right: 0;
+  }
+  a {
+    color: #B8B8B8;
+    text-decoration: none;
+  }
+}

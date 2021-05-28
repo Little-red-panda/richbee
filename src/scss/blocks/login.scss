@@ -1,0 +1,52 @@
+.login {
+  width: 18rem;
+  height: 4.8rem;
+  border-radius: 0.4rem;
+
+  background-color: #F8F8F8;
+}
+
+.login__link {
+  display: flex;
+  width: inherit;
+  height: inherit;
+  align-items: center;
+  text-decoration: none;
+}
+
+.login__icon {
+  position: relative;
+  height: inherit;
+  padding: 11px 12px 10px 13px;
+}
+
+.login__icon::after {
+  content: "";
+  position: absolute;
+  width: 0.1rem;
+  height: inherit;
+  top: 0;
+  left: 5.2rem;
+  background-color: #E4E4E4;
+}
+
+.login__text {
+  @include indents();
+  @include font(1.3rem, 1.5rem, 500);
+  position: relative;
+  height: inherit;
+  padding-left: 0.9rem;
+}
+
+.login__text-login {
+  @include indents();
+  padding-top: 0.7rem;
+  color: #383838;
+}
+
+.login__text-logup {
+  @include indents();
+  padding-top: 0.4rem;
+  font-weight: 400;
+  color: #ACACAC;
+}

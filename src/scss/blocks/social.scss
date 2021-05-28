@@ -1,0 +1,24 @@
+.social__list {
+  @include indents();
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  min-width: 95px;
+
+  list-style: none;
+}
+
+.social__item {
+  @include indents();
+  padding-right: 15px;
+
+  &:last-child {
+    padding: 0;
+  }
+
+  svg {
+    display: block;
+  }
+}

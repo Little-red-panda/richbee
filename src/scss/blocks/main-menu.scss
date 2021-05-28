@@ -1,0 +1,27 @@
+.main-menu__list{
+  @include indents();
+  position: relative;
+  display: flex;
+  list-style: none;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0.1rem;
+    height: 2.4rem;
+    top: -0.5rem;
+    right: 0;
+    background-color: #B8B8B8;
+
+  }
+}
+
+.main-menu__item {
+  @include font(1.4rem, 1.6rem, 700);
+  padding-right: 2.5rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  a {
+    color: #383838;
+    text-decoration: none;
+  }
+}

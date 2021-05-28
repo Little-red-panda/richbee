@@ -11,140 +11,139 @@
   @@include('parts/sprite.html')
   <header class="page-header">
     <div class="page-header__about-company about-company">
-
-      <ul class="about-company__info-list">
-        <li>Оптовикам</li>
-        <li>Заказ и доставка</li>
-        <li>О компании</li>
-        <li>Обзоры</li>
-        <li>Контакты</li>
-      </ul>
-
-      <a href="#" class="about-company__add-call">Заказать звонок</a>
-
-      <div class="about-company__social social">
-        <ul class="social__list">
-          <li class="social__item social__item--vk">
-            <svg width="25" height="15">
-              <use xlink:href="#vk"></use>
-            </svg>
-          </li>
-          <li class="social__item social__item--whatsapp">
-            <svg width="20" height="20">
-              <use xlink:href="#whatsapp"></use>
-            </svg>
-          </li>
-          <li class="social__item social__item--instagram">
-            <svg width="20" height="20">
-              <use xlink:href="#instagram"></use>
-            </svg>
-          </li>
+      <div class="about-company__container container">
+        <ul class="about-company__info-list">
+          <li>Оптовикам</li>
+          <li>Заказ и доставка</li>
+          <li>О компании</li>
+          <li>Обзоры</li>
+          <li>Контакты</li>
         </ul>
-      </div>
 
-      <div class="about-company__contacts contacts">
-        <ul class="contacts__list">
-          <li class="contacts__email">
-            <a href="mailto:info@richbee.ru">info@richbee.ru</a>
-          </li>
-          <li class="contacts__phone">
-            <a href="tel:+78005411335">8 (800) 541-13-35</a>
-          </li>
-        </ul>
-      </div>
-       
+        <a href="#" class="about-company__add-call">Заказать звонок</a>
+
+        <div class="about-company__social social">
+          <ul class="social__list">
+            <li class="social__item social__item--vk">
+              <svg width="25" height="15">
+                <use xlink:href="#vk"></use>
+              </svg>
+            </li>
+            <li class="social__item social__item--whatsapp">
+              <svg width="20" height="20">
+                <use xlink:href="#whatsapp"></use>
+              </svg>
+            </li>
+            <li class="social__item social__item--instagram">
+              <svg width="20" height="20">
+                <use xlink:href="#instagram"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-company__contacts contacts">
+          <ul class="contacts__list">
+            <li class="contacts__email">
+              <a href="mailto:info@richbee.ru">info@richbee.ru</a>
+            </li>
+            <li class="contacts__phone">
+              <a href="tel:+78005411335">8 (800) 541-13-35</a>
+            </li>
+          </ul>
+        </div>
+      </div> 
     </div>
 
-    <nav class="page-header__main-nav main-nav">
-
-      <a href="#" class="main-nav__logo">
-        <svg width="175" height="44">
-          <use xlink:href="#logo"></use>
-        </svg>
-      </a>
-
-      <div class="main-nav__user-nav user-nav">
-
-        <div class="user-nav__search">
-          <input 
-            type="text" 
-            name="search" 
-            id="search" 
-            placeholder="Поиск товаров по сайту" 
-            class="user-nav__search-input"
-          >
-          <button type="button" class="user-nav__search-btn button">
-            <svg width="15" height="15">
-              <use xlink:href="#search"></use>
-            </svg>
-          </button>
-        </div>
-
-        <div class="user-nav__login login">
-          <a href="#" class="login__link">
-            <span class="login__icon">
-              <svg width="27" height="27">
-                <use xlink:href="#login"></use>
+    <nav class="page-header__main-nav main-nav container">
+      <div class="main-naw__wrapper">
+        <a href="#" class="main-nav__logo">
+          <svg width="175" height="44">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+  
+        <div class="main-nav__user-nav user-nav">
+          <div class="user-nav__search">
+            <input 
+              type="text" 
+              name="search" 
+              id="search" 
+              placeholder="Поиск товаров по сайту" 
+              class="user-nav__search-input"
+            >
+            <button type="button" class="user-nav__search-btn button">
+              <svg width="15" height="15">
+                <use xlink:href="#search"></use>
               </svg>
-            </span>
-            <p class="login__text">
-              Вход<br>
-              Регистрация
-            </p>
-          </a>
+            </button>
+          </div>
+  
+          <div class="user-nav__login login">
+            <a href="#" class="login__link">
+              <span class="login__icon">
+                <svg width="27" height="27">
+                  <use xlink:href="#login"></use>
+                </svg>
+              </span>
+              <div class="login__text">
+                <p class="login__text-login">Вход</p>
+                <p class="login__text-logup">Регистрация</p>
+              </div>
+            </a>
+          </div>
+  
+          <div class="user-nav__cart cart">
+            <a href="#" class="cart__link">
+              <span class="cart__icon">
+                <svg width="31" height="29">
+                  <use xlink:href="#cart"></use>
+                </svg>
+              </span>
+              <div class="cart__info">
+                <p class="cart__price">4 127 350 ₽</p>
+                <p class="cart__counter">3 534 товаров</p>
+              </div>
+            </a>
+          </div>
         </div>
-
-        <div class="user-nav__cart cart">
-          <a href="#" class="cart__link">
-            <span class="cart__icon">
-              <svg width="31" height="29">
-                <use xlink:href="#cart"></use>
-              </svg>
-            </span>
-            <div class="cart__info">
-              <p class="cart__price">4 127 350 ₽</p>
-              <p class="cart__counter">3 534 товаров</p>
-            </div>
-          </a>
-        </div>
-
       </div>
-
+      
       <div class="main-nav__site-nav site-nav">
 
         <div class="site-nav__main-menu main-menu">
           <ul class="main-menu__list">
-            <li class="main-menu__item">Каталог товаров</li>
-            <li class="main-menu__item">Акции и скидки</li>
+            <li class="main-menu__item"><a href="#" class="mein-menu__link">Каталог товаров</a></li>
+            <li class="main-menu__item"><a href="#" class="mein-menu__link">Акции и скидки</a></li>
           </ul>
         </div>
 
         <div class="main-nav__sub-menu sub-menu"></div>
         <ul class="sub-menu__list">
-          <li class="sub-menu__item">Автосвет</li>
-          <li class="sub-menu__item">Автохимия</li>
-          <li class="sub-menu__item">Инструменты</li>
-          <li class="sub-menu__item">Крепеж</li>
-          <li class="sub-menu__item">Электрика</li>
-          <li class="sub-menu__item">Посуда</li>
-          <li class="sub-menu__item">Аксессуары</li>
-          <li class="sub-menu__item">Брызговики</li>
-          <li class="sub-menu__item">Фары</li>
+          <li class="sub-menu__item"><a href="#" class="sub-menu__link">Автосвет</a></li>
+          <li class="sub-menu__item"><a href="#" class="sub-menu__link">Автохимия</a></li>
+          <li class="sub-menu__item"><a href="#" class="sub-menu__link">Инструменты</a></li>
+          <li class="sub-menu__item"><a href="#" class="sub-menu__link">Крепеж</a></li>
+          <li class="sub-menu__item"><a href="#" class="sub-menu__link">Электрика</a></li>
+          <li class="sub-menu__item"><a href="#" class="sub-menu__link">Посуда</a></li>
+          <li class="sub-menu__item"><a href="#" class="sub-menu__link">Аксессуары</a></li>
+          <li class="sub-menu__item"><a href="#" class="sub-menu__link">Брызговики</a></li>
+          <li class="sub-menu__item"><a href="#" class="sub-menu__link">Фары</a></li>
         </ul>
       </div>
 
     </nav>
   </header>
 
-  <main>
+  <main class="container">
     <h1 class="visually-hidden">Инструменты</h1>
     
     <div class="breadcrumbs">
       <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__item">Главная</li>
-        <li class="breadcrumbs__item">Каталог</li>
-        <li class="breadcrumbs__item">Инструменты</li>
-        <li class="breadcrumbs__item">Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]</li>
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог</a></li>
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Инструменты</a></li>
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]</a></li>
       </ul>
     </div>
 
