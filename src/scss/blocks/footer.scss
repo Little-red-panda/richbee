@@ -1,0 +1,32 @@
+.footer {
+  padding: 6.5rem 0;
+  background: $yellow;
+  color: $dark-grey;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__title {
+  @include indents();
+  @include font(3.2rem, 3.5rem, 700);
+  width: 40.8rem;
+  
+  background-image: url("../img/icon/envelop.svg");
+  background-repeat: no-repeat;
+  background-position: 0 1rem;
+
+  padding-left: 10.2rem;
+}
+
+.footer__text {
+  @include indents();
+  @include font(1.6rem, 1.4, 400);
+  width: 26.4rem;
+}
+
+.footer__subscribe {
+  margin-left: auto;
+  margin-right: 0;
+}

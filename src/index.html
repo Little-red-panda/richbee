@@ -155,7 +155,7 @@
       <div class="product__wrapper">
         <div class="product__slider slider">
          
-          <button class="slider__controller slider__controller--back">
+          <button class="slider__controller slider__controller--prev button-controller">
             <svg width="14" height="8">
               <use xlink:href="#arrow"></use>
             </svg>
@@ -170,7 +170,7 @@
           <label for="slide-4"></label>
           <input type="radio" name="slider" id="slide-5" class="visually-hidden">
           <label for="slide-5"></label>
-          <button class="slider__controller slider__controller--next">
+          <button class="slider__controller slider__controller--next button-controller">
             <svg width="14" height="8">
               <use xlink:href="#arrow"></use>
             </svg>
@@ -405,124 +405,147 @@
       <h2 class="analogs__title">Аналоги</h2>
 
       <div class="analogs__wrapper">
-        <button class="analogs__button analogs__button--back">
+        <button class="analogs__button analogs__button--prev button-controller">
           <svg width="13" height="8">
             <use xlink:href="#arrow"></use>
           </svg>
         </button>
+
         <ul class="analogs__list">
   
           <li class="analogs__item">
             <a href="#" class="analogs__link">
-              <picture>
-                <img 
-                  srcset="img/analog1.jpg 1x, img/analog1@2x.jpg 2x"
-                  alt="Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]"
-                  class="analogs__link-img"
-                >
-              </picture>
-              <p class="analogs__link-text">
-                Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]
-              </p>
+              <figure class="analogs__link-figure">
+                <picture>
+                  <img 
+                    srcset="img/analog1.jpg 1x, img/analog1@2x.jpg 2x"
+                    alt="Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]"
+                    class="analogs__link-img"
+                  >
+                </picture>
+                <figcaption class="analogs__link-caption">
+                  Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]
+                </figcaption>
+              </figure>
             </a>
   
             <div class="analogs__price">
               <p class="analogs__instock">В наличии</p>
               <p class="analogs__full-price">1 150 ₽</p>
-              <small class="analogs__wholesale-price">708 ₽ (оптовая)</small>
-              <span class="analogs__wholesale__info">
-                <svg width="13" height="13">
-                  <use xlink:href="#info"></use>
-                </svg>
-              </span>
+              <small class="analogs__wholesale-price">708 ₽ (оптовая)
+                <span class="analogs__wholesale__info">
+                  <svg width="13" height="13">
+                    <use xlink:href="#info"></use>
+                  </svg>
+                </span>
+              </small>
               <button class="analogs__price-button button">В корзину</button>
             </div>
           </li>
   
           <li class="analogs__item">
             <a href="#" class="analogs__link">
-              <picture>
-                <img
-                  srcset="img/analog2.jpg 1x, img/analog2@2x.jpg 2x"
-                  alt="Маяк импульсный светодиодный на магните 10-30V 2-режима"
-                  class="analogs__link-img"
-                >
-              </picture>
-              <p class="analogs__link-text">
-                Маяк импульсный светодиодный на магните 10-30V 2-режима
-              </p>
+              <figure class="analogs__link-figure">
+                <picture>
+                  <img
+                    srcset="img/analog2.jpg 1x, img/analog2@2x.jpg 2x"
+                    alt="Маяк импульсный светодиодный на магните 10-30V 2-режима"
+                    class="analogs__link-img"
+                  >
+                </picture>
+                <figcaption class="analogs__link-caption">
+                  Маяк импульсный светодиодный на магните 10-30V 2-режима
+                </figcaption>
+              </figure>
             </a>
   
             <div class="analogs__price">
               <p class="analogs__instock">В наличии</p>
               <p class="analogs__full-price">1 150 ₽</p>
-              <small class="analogs__wholesale-price">708 ₽ (оптовая)</small>
-              <span class="analogs__wholesale__info">
-                <svg width="13" height="13">
-                  <use xlink:href="#info"></use>
-                </svg>
-              </span>
+              <small class="analogs__wholesale-price">708 ₽ (оптовая)
+                <span class="analogs__wholesale__info">
+                  <svg width="13" height="13">
+                    <use xlink:href="#info"></use>
+                  </svg>
+                </span>
+              </small>
               <button class="analogs__price-button button">В корзину</button>
             </div>
           </li>
   
-          <li class="analogs__item">
+          <li class="analogs__item analogs__item--out-of-stock">
             <a href="#" class="analogs__link">
-              <picture>
-                <img
-                srcset="img/analog3.jpg 1x, img/analog3@2x.jpg 2x"
-                  alt="Указатель габаритов с повторителем поворота «Бегущие огни» на  светодиодах"
-                  class="analogs__link-img"
-                >
-              </picture>
-              <p class="analogs__link-text">
-                Указатель габаритов с повторителем поворота «Бегущие огни» на  светодиодах
-              </p>
+              <figure class="analogs__link-figure">
+                <picture>
+                  <img
+                  srcset="img/analog3.jpg 1x, img/analog3@2x.jpg 2x"
+                    alt="Указатель габаритов с повторителем поворота «Бегущие огни» на  светодиодах"
+                    class="analogs__link-img"
+                  >
+                </picture>
+                <figcaption class="analogs__link-caption">
+                  Указатель габаритов с повторителем поворота «Бегущие огни» на  светодиодах
+                </figcaption>
+              </figure>
             </a>
   
             <div class="analogs__price">
-              <p class="analogs__instock analogs__instock--out-of-stock">Нет в наличии</p>
+              <p class="analogs__instock">Нет в наличии</p>
               <p class="analogs__full-price">1 150 ₽</p>
-              <small class="analogs__wholesale-price">708 ₽ (оптовая)</small>
-              <span class="analogs__wholesale__info">
-                <svg width="13" height="13">
-                  <use xlink:href="#info"></use>
-                </svg>
-              </span>
-              <button class="analogs__price-button analogs__price-button--out-of-stock button">Сообщить о появлении</button>
+              <small class="analogs__wholesale-price">708 ₽ (оптовая)
+                <span class="analogs__wholesale__info">
+                  <svg width="13" height="13">
+                    <use xlink:href="#info"></use>
+                  </svg>
+                </span>
+              </small>
+              <button class="analogs__price-button analogs__price-button button">Сообщить о появлении</button>
             </div>
           </li>
   
-          <li class="analogs__item">
+          <li class="analogs__item analogs__item--sale">
             <a href="#" class="analogs__link">
-              <picture>
-                <img 
-                  srcset="img/analog4.jpg 1x, img/analog4@2x.jpg 2x"
-                  alt="Фара противотуманная дальнего света круглая с желтым габаритом (двухрежимная) 12-24 В, 27 Вт, 4 узкая"
-                  class="analogs__link-img"
-                >
-              </picture>
-              
-              <p class="analogs__link-text">
-                Фара противотуманная дальнего света круглая с желтым габаритом (двухрежимная) 12-24 В, 27 Вт, 4 узкая
-              </p>
+              <span class="analogs__item-icon-sale">
+                <svg width="26" height="26">
+                  <use xlink:href="#sale"></use>
+                </svg>
+              </span>
+              <figure class="analogs__link-figure">
+                <picture>
+                  <img 
+                    srcset="img/analog4.jpg 1x, img/analog4@2x.jpg 2x"
+                    alt="Фара противотуманная дальнего света круглая с желтым габаритом (двухрежимная) 12-24 В, 27 Вт, 4 узкая"
+                    class="analogs__link-img"
+                  >
+                </picture>
+                
+                <figcaption class="analogs__link-caption">
+                  Фара противотуманная дальнего света круглая с желтым габаритом (двухрежимная) 12-24 В, 27 Вт, 4&nbspузкая
+                </figcaption>
+              </figure>
             </a>
   
             <div class="analogs__price">
               <p class="analogs__instock">В наличии</p>
-              <p class="analogs__full-price">1 150 ₽</p>
-              <small class="analogs__wholesale-price">708 ₽ (оптовая)</small>
-              <span class="analogs__wholesale__info">
-                <svg width="13" height="13">
-                  <use xlink:href="#info"></use>
-                </svg>
-              </span>
+              <p class="analogs__full-price">
+                1 150 ₽
+                <span class="analogs__full-price-sale">3 990 ₽</span>
+              </p>
+              <small class="analogs__wholesale-price">
+                708 ₽ (оптовая)
+                <span class="analogs__wholesale__info">
+                  <svg width="13" height="13">
+                    <use xlink:href="#info"></use>
+                  </svg>
+                </span>
+                <span class="analogs__wholesale-price-sale">2 347 ₽</span>
+              </small>
               <button class="analogs__price-button button">В корзину</button>
             </div>
           </li>
   
         </ul>
-        <button class="analogs__button analogs__button--next">
+        <button class="analogs__button analogs__button--next button-controller">
           <svg width="13" height="8">
             <use xlink:href="#arrow"></use>
           </svg>
@@ -533,17 +556,20 @@
   </main>
   
   <footer class="footer">
-    <h2 class="footer__title">Будьте в курсе новостей и акций</h2>
-    <p class="footer__text">Подпишитесь на рассылку и получайте первым информацию об акциях Richbee</p>
-
-    <div class="footer__subscribe subscribe">
-      <input
-        type="email"
-        name="email"
-        id="email"
-        class="subscribe__email"
-      >
-      <button type="submit" class="subscribe__btn button">Подписаться</button>
+    <div class="container footer__container">
+      <h2 class="footer__title">Будьте в курсе новостей и акций</h2>
+      <p class="footer__text">Подпишитесь на рассылку и получайте первым информацию об акциях Richbee</p>
+  
+      <div class="footer__subscribe subscribe">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Электронная почта"
+          class="subscribe__email"
+        >
+        <button type="submit" class="subscribe__button button">Подписаться</button>
+      </div>
     </div>
 
   </footer>
