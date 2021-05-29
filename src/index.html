@@ -80,7 +80,7 @@
           </div>
   
           <div class="user-nav__login login">
-            <a href="#" class="login__link">
+            <button class="login__button">
               <span class="login__icon">
                 <svg width="27" height="27">
                   <use xlink:href="#login"></use>
@@ -90,7 +90,7 @@
                 <p class="login__text-login">Вход</p>
                 <p class="login__text-logup">Регистрация</p>
               </div>
-            </a>
+            </button>
           </div>
   
           <div class="user-nav__cart cart">
@@ -574,23 +574,32 @@
 
   </footer>
 
-  <section class="modal-login">
-    <h2 class="modal-login__title">Вход в личный кабинет</h2>
-    <form class="modal-login__form" action="#" method="POST">
-        <p class="modal-login__email">
-            <label for="user-email">Email</label>
-            <input class="modal-login__email-input" id="user-email" type="email" name="email" value="nikolayivanovich@yandex.ru" placeholder="Email">
-        </p>
-        <p class="modal-login__password">
-            <label for="user-password">Пароль</label>
-            <input class="modal-login__password-input" id="user-password" type="password" name="password" value="" placeholder="Пароль">
-        </p>
-        <p class="modal-login__password-info">
-            <a href="#" class="modal-login__password-restore">Забыли пароль?</a>
-        </p>
-        <button class="modal-login__btn-login button" type="submit">Войти</button>
-        <a href="#" class="modal-login__logup">Зарегестрироваться</a>
-    </form>
+  <section class="modal">
+    <div class="modal-login">
+      <button class="modal-login__close-button">
+        <svg width="22" height="22">
+          <use xlink:href="#close"></use>
+        </svg>
+      </button>
+      <h2 class="modal-login__title">Вход в личный кабинет</h2>
+      <form class="modal-login__form" action="#" method="POST">
+          <!-- <p class="modal-login__email"> -->
+              <label class="modal-login__email-label" for="user-email">Email</label>
+              <input class="modal-login__email-input" id="user-email" type="email" name="email" value="nikolayivanovich@yandex.ru" placeholder="Email">
+          <!-- </p> -->
+          <!-- <p class="modal-login__password"> -->
+              <label  class="modal-login__email-label" for="user-password">Пароль</label>
+              <input class="modal-login__password-input" id="user-password" type="password" name="password" value="" placeholder="Пароль">
+          <!-- </p> -->
+          <!-- <p class="modal-login__password-info"> -->
+              <a href="#" class="modal-login__password-restore">Забыли пароль?</a>
+          <!-- </p> -->
+          <button class="modal-login__btn-login button" type="submit">Войти</button>
+          <a href="#" class="modal-login__link-logup">Зарегестрироваться</a>
+      </form>
+    </div>
+    
+    <div class="modal-shim"></div>
   </section>
 
   <script src="js/jquery-3.6.0.min.js"></script>

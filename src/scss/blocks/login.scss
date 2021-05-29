@@ -1,17 +1,20 @@
 .login {
   width: 18rem;
   height: 4.8rem;
-  border-radius: 0.4rem;
 
-  background-color: $bg-grey;
 }
 
-.login__link {
+.login__button {
+  @include indents();
   display: flex;
   width: inherit;
   height: inherit;
+  border: none;
+  border-radius: 0.4rem;
+
+  background-color: $bg-grey;
   align-items: center;
-  text-decoration: none;
+  
 }
 
 .login__icon {
