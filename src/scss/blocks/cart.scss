@@ -3,7 +3,7 @@
   height: 4.8rem;
   border-radius: 0.4rem;
 
-  background-color: #F8F8F8;
+  background-color: $bg-grey;
 }
 
 .cart__link {
@@ -32,7 +32,7 @@
 
 .cart__info {
   @include indents();
-  @include font(1.3rem, 1.5rem, 500);
+  @include font(1.3rem, 1.5rem, 700);
   position: relative;
   height: inherit;
   padding-left: 0.9rem;
@@ -41,7 +41,7 @@
 .cart__price {
   @include indents();
   padding-top: 0.7rem;
-  color: #383838;
+  color: $dark-grey;
 }
 
 .cart__counter {

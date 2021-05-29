@@ -1,6 +1,6 @@
 .about-company {
   width: 100%;
-  background-color: #383838;
+  background-color: $dark-grey;
 }
 
 .about-company__container {
@@ -22,7 +22,7 @@
   @include indents();
   @include font(1.4rem, 1.6rem, 500);
 
-  color: #B8B8B8;
+  color: $light-grey;
 
   padding-right: 2rem;
 }
@@ -34,7 +34,7 @@
   border-bottom: 0.1rem dashed;
   
   text-decoration: none;
-  color: #FFD637;
+  color: $yellow;
 
   margin-right: 2.7rem;
 }
