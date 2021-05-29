@@ -18,9 +18,10 @@
   border-bottom-left-radius: 0.4rem;
   border-top-left-radius: 0.4rem;
 
+  padding-left: 2rem;
+
   &::placeholder {
     @include font(1.4rem, 1.6rem, 400);
-    padding-left: 2rem;
     color: $light-grey;
   }
 }

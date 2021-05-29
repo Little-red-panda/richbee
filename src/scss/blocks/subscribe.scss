@@ -8,10 +8,10 @@
   border-radius: 0.4rem;
   background-color: $yellow;
 
+  padding-left: 2rem;
   margin-right: 2rem;
   &::placeholder {
     @include font(1.4rem, 1.6rem, 400);
-    padding-left: 2rem;
   }
 }
 
