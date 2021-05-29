@@ -39,7 +39,6 @@
 html {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 10px;
-  // scroll-behavior: smooth;
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -49,6 +48,11 @@ html {
 body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 1.6rem;
+  color: $dark-grey;
+}
+
+img {
+  display: block;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -74,3 +78,40 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 0 12rem;
 }
+
+.button {
+  @include indents();
+  @include font(1.4rem, 1.6rem, 700);
+  display: block;
+  height: 4.5rem;
+
+  border: none;
+  border-radius: 0.4rem;
+
+  background-color: $yellow;
+
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  color: $dark-grey;
+}
+
+.button-controller {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #FFFFFF;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
+
+  svg {
+    margin-bottom: 1px;
+  }
+}
+
