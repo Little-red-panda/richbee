@@ -1,0 +1,22 @@
+.subscribe {
+  display: flex;
+}
+.subscribe__email {
+  width: 25rem;
+  height: 4.5rem;
+  border: 0.1rem solid $dark-grey;
+  border-radius: 0.4rem;
+  background-color: $yellow;
+
+  margin-right: 2rem;
+  &::placeholder {
+    @include font(1.4rem, 1.6rem, 400);
+    padding-left: 2rem;
+  }
+}
+
+.subscribe__button {
+  width: 18.2rem;
+  background: $dark-grey;
+  color: $yellow;
+}
