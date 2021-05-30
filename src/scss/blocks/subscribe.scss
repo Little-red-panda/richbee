@@ -13,10 +13,19 @@
   &::placeholder {
     @include font(1.4rem, 1.6rem, 400);
   }
+  &:focus {
+    outline: none;
+    background-color: $bg-grey;
+  }
 }
 
 .subscribe__button {
   width: 18.2rem;
   background: $dark-grey;
   color: $yellow;
+
+  &:hover {
+    background: $dark-grey;
+    color: #FFFFFF;
+  }
 }

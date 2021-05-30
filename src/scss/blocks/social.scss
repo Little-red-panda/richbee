@@ -19,6 +19,13 @@
   }
 
   svg {
+    fill: #B8B8B8;
     display: block;
+    
+    transition: 0.2s;
+    &:hover {
+      fill: #FFFFFF;
+    }
   }
+  
 }

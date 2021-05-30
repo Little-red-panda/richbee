@@ -16,7 +16,7 @@
     top: -0.4rem;
     right: 1.5rem;
 
-    background-color: #fff;
+    background-color: #FFFFFF;
   }
 }
 
@@ -24,6 +24,11 @@
   @include font(1.4rem, 1.6rem, 700);
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: #FFFFFF;
+  
+  transition: 0.2s;
+    &:hover {
+    color: $light-grey;
+  }
 }
 

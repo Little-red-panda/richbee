@@ -13,7 +13,7 @@
   @include font(3.2rem, 3.5rem, 700);
   width: 40.8rem;
   
-  background-image: url("../img/icon/envelop.svg");
+  background-image: url("img/icon/envelop.svg");
   background-repeat: no-repeat;
   background-position: 0 1rem;
 
@@ -27,6 +27,7 @@
 }
 
 .footer__subscribe {
+  @include indents();
   margin-left: auto;
   margin-right: 0;
 }

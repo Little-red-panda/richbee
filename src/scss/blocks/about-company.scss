@@ -16,15 +16,24 @@
   list-style: none;
   
   margin-right: auto;
+
+  li {
+    padding-right: 2rem;
+  }
 }
 
-.about-company__info-list li {
+.about-company__info-list a {
   @include indents();
   @include font(1.4rem, 1.6rem, 500);
+  display: block;
 
+  text-decoration: none;
   color: $light-grey;
 
-  padding-right: 2rem;
+  transition: 0.2s;
+  &:hover {
+    color: #FFFFFF;
+  }
 }
 
 .about-company__add-call {
@@ -37,12 +46,13 @@
   color: $yellow;
 
   margin-right: 2.7rem;
+
+  transition: 0.2s;
+  &:hover {
+    color: $hover-yellow;
+  }
 }
 
 .about-company__social {
   margin-right: 2.7rem;
 }
-
-// .about-company__contacts {
-//   margin-left: auto;
-// }

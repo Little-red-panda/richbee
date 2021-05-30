@@ -6,6 +6,12 @@
 
 .main-nav__logo {
   margin-right: 2.8rem;
+  fill: #383838;
+
+  transition: 0.2s;
+  &:hover {
+    fill: #000;
+  }
 }
 
 .main-nav__site-nav {

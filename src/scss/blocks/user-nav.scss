@@ -24,6 +24,10 @@
     @include font(1.4rem, 1.6rem, 400);
     color: $light-grey;
   }
+  &:focus {
+    border: 0.1rem solid #B8B8B8;
+    outline: none;
+  }
 }
 
 .user-nav__search-btn {
@@ -40,6 +44,7 @@
   background-color: $yellow;
 
   margin-right: 3.5rem;
+
   svg{
     margin-top: 0.5rem;
   }

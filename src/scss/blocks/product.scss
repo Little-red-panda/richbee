@@ -68,14 +68,15 @@
   @include indents();
   display: inline-block;
 
-  p {
-    @include indents();
-    @include font(3.2rem, 3.7rem, 700);
-  }
   small {
     @include indents();
     @include font(1.4rem, 1.6rem, 400);
   }
+}
+
+.product__full-price-price {
+  @include indents();
+  @include font(3.2rem, 3.7rem, 700);
 }
 
 .product__wholesale-price {
@@ -83,21 +84,60 @@
   position: relative;
   display: inline-block;
   margin-left: 5rem;
-  p {
-    @include indents();
-    @include font(2rem, 2.3rem, 700);
-    color: #949494;
-  }
+  
   small {
     @include indents();
     @include font(1.4rem, 1.6rem, 400);
     color: #949494;
   }
-  span {
+}
+
+.product__wholesale-price-price {
+  @include indents();
+  @include font(2rem, 2.3rem, 700);
+  color: #949494;
+}
+
+.product__wholesale-info {
+  position: absolute;
+  top: 0;
+  right: -2.2rem;
+
+  cursor: $cursor;
+}
+
+.product__wholesale-info-popup {
+  @include indents();
+  @include font(1.6rem, 1.25, 400);
+  display: none;
+  position: absolute;
+  width: 24rem;
+  height: 11.1rem;
+  top: 3.1rem;
+  left: -2.1rem;
+
+  border-radius: 0.4rem;
+
+  background-color: #2E2E2E;
+  color: #F5F6F9;
+
+  padding: 1.5rem 1.8rem 1.6rem 2rem;
+
+  &::after {
+    content: "";
     position: absolute;
-    top: 0;
-    right: -2.2rem;
+    top: -.6rem;
+    left: 2rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 0.3rem;
+    background-color: #2E2E2E;
+    transform: rotate(45deg);
   }
+}
+
+.product__wholesale-info:hover .product__wholesale-info-popup{
+  display: block;
 }
 
 .product__button {
@@ -128,7 +168,7 @@
     position: absolute;
     width: 1.8rem;
     height: 1.8rem;
-    background: url("../img/icon/check.svg") no-repeat;
+    background: url("img/icon/check.svg") no-repeat;
     top: 0.2rem;
     left: -2.7rem;
   }
@@ -145,4 +185,8 @@
   color: inherit;
 
   margin-bottom: 0.3rem;
+
+  &:hover {
+    font-weight: 500;
+  }
 }

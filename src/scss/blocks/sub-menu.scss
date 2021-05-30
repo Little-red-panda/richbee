@@ -16,5 +16,10 @@
     vertical-align: middle;
     color: $light-grey;
     text-decoration: none;
+
+    transition: 0.2s;
+    &:hover {
+      color: $dark-grey;
+    }
   }
 }

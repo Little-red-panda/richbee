@@ -39,10 +39,15 @@
 
   color: #797979;
 
-  cursor: pointer;
+  cursor: $cursor;
 
   margin-right: 4rem;
+
+  transition: 0.2s;
   
+  &:hover {
+    color: $dark-grey;
+  }
 }
 
 .tabs__item {

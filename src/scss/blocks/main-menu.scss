@@ -25,5 +25,10 @@
     vertical-align: middle;
     text-decoration: none;
     color: $dark-grey;
+
+    transition: 0.2s;
+    &:hover {
+      color: $light-grey;
+    }
   }
 }

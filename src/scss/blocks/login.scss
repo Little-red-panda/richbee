@@ -14,7 +14,10 @@
 
   background-color: $bg-grey;
   align-items: center;
-  
+
+  &:hover {
+    background-color: $hover-bg-grey;
+  }
 }
 
 .login__icon {

@@ -32,5 +32,10 @@
   &--current {
     font-weight: 500;
     color: $dark-grey;
+    cursor: default;
+  }
+
+  &:hover {
+    color: $dark-grey;
   }
 }

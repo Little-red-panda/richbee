@@ -55,22 +55,28 @@ img {
   display: block;
 }
 
+a,
+button,
+input[type="radio"] + label {
+  cursor: $cursor;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-    position: absolute;
+  position: absolute;
 
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-    white-space: nowrap;
+  white-space: nowrap;
 
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -95,6 +101,10 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 
   color: $dark-grey;
+
+  &:hover {
+    background-color: $hover-yellow;
+  }
 }
 
 .button-controller {
@@ -108,10 +118,13 @@ input[type="radio"].visually-hidden {
   background: #FFFFFF;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 
-  cursor: pointer;
+  transition: 0.2s;
 
   svg {
     margin-bottom: 1px;
+  }
+  &:hover {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   }
 }
 
