@@ -3,17 +3,6 @@
   padding-left: 0.3rem;
 }
 
-.slider__controller {
-  left: 1.7rem;
-
-  &--next {
-    top: 42rem;
-    svg {
-      transform: rotate(180deg);
-    }
-  }
-}
-
 .slider__slides {
   position: relative;
   width: 73.1rem;
@@ -30,9 +19,6 @@
   width: 73.1rem;
   height: 45rem;
 
-  opacity: 0;
-  z-index: 0;
-
   transition: ease-in-out .5s;
 
   img {
@@ -43,63 +29,57 @@
   }
 }
 
-.slider label {
-  position: absolute;
-  display: block;
-  width: 6rem;
-  height: 6rem;
-  top: 5.5rem;
-
-  border: 0.1rem solid #EEEEEE;
-
-  background-image: url("../img/1preview.jpg");
-  background-size: auto 3.3rem;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  cursor: pointer;
-
-  &::after {
-    content: "";
-    position: absolute;
-    
-    width: 6rem;
-    height: 6rem;
-
-    transition: ease-in-out .2s;
+.slider__button-prev,
+.slider__button-next {
+  top: 0;
+  left: 1.7rem;
+}
+.slider__button-next {
+  top: 42rem;
+  svg {
+    transform: rotate(180deg);
   }
 }
 
-#slide-2 + label {
-  top: 5.5rem + 7rem;
-  background-image: url("../img/2preview.jpg");
-}
-#slide-3 + label {
-  top: 5.5rem + 7rem + 7rem;
-  background-image: url("../img/3preview.jpg");
-}
-#slide-4 + label {
-  top: 5.5rem + 7rem + 7rem + 7rem;
-  background-image: url("../img/4preview.jpg");
-}
-#slide-5 + label {
-  top: 5.5rem + 7rem + 7rem + 7rem + 7rem;
-  background-image: url("../img/icon/video.svg");
+.slider__controlls {
+  position: absolute;
+  top: 0;
 }
 
-#slide-1:checked + label::after,
-#slide-2:checked + label::after,
-#slide-3:checked + label::after,
-#slide-4:checked + label::after,
-#slide-5:checked + label::after {
-  border: 0.1rem solid #767676;
-}
+.slider__controller {
+  position: absolute;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  top: 5.5rem;
+  border: 0.1rem solid #EEEEEE;
 
-#slide-1:checked ~ .slider__slides > .slider__slide-1,
-#slide-2:checked ~ .slider__slides > .slider__slide-2,
-#slide-3:checked ~ .slider__slides > .slider__slide-3,
-#slide-4:checked ~ .slider__slides > .slider__slide-4,
-#slide-5:checked ~ .slider__slides > .slider__slide-5 {
-  opacity: 1;
-  z-index: 1;
+  cursor: $cursor;
+  
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &-2 {
+    top: 5.5rem + 7rem;
+  }
+  &-3 {
+    top: 5.5rem + 7rem + 7rem;
+  }
+  &-4 {
+    top: 5.5rem + 7rem + 7rem + 7rem;
+  }
+  &-5 {
+    top: 5.5rem + 7rem + 7rem + 7rem + 7rem;
+  }
+
+  &:hover {
+    border: 0.1rem solid #767676;
+  }
+}
+.active-slide {
+  border: 1px solid #767676;
 }

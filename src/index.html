@@ -161,50 +161,63 @@
 
       <div class="product__wrapper">
         <div class="product__slider slider">
-          <button class="slider__controller slider__controller--prev button-controller">
-            <svg width="14" height="8">
-              <use xlink:href="#arrow"></use>
-            </svg>
-          </button>
-          <input type="radio" name="slider" id="slide-1" class="visually-hidden">
-          <label for="slide-1"></label>
-          <input type="radio" name="slider" id="slide-2" checked class="visually-hidden">
-          <label for="slide-2"></label>
-          <input type="radio" name="slider" id="slide-3" class="visually-hidden">
-          <label for="slide-3"></label>
-          <input type="radio" name="slider" id="slide-4" class="visually-hidden">
-          <label for="slide-4"></label>
-          <input type="radio" name="slider" id="slide-5" class="visually-hidden">
-          <label for="slide-5"></label>
-          <button class="slider__controller slider__controller--next button-controller">
-            <svg width="14" height="8">
-              <use xlink:href="#arrow"></use>
-            </svg>
-          </button>
-  
           <div class="slider__slides">
-            <picture class="slider__slide slider__slide-1">
-              <img srcset="img/1.jpg 1x, img/1@2x.jpg 2x" alt="изображение">
-            </picture>
-  
-            <picture class="slider__slide slider__slide-2">
-              <img srcset="img/2.jpg 1x, img/2@2x.jpg 2x" alt="изображение">
-            </picture>
-  
-            <picture class="slider__slide slider__slide-3">
-              <img srcset="img/3.jpg 1x, img/3@2x.jpg 2x" alt="изображение">
-            </picture>
-  
-            <picture class="slider__slide slider__slide-4">
-              <img srcset="img/4.jpg 1x, img/4@2x.jpg 2x" alt="изображение">
-            </picture>
-  
-            <video width="730px" height="450px" class="slider__slide slider__slide-5" controls="controls" poster="img/icon/video.svg">
-              <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-              Видео невозможно воспроизвести в вашем браузере
-            </video>
+            <div class="slider__slide">
+              <picture>
+                <img srcset="img/1.jpg 1x, img/1@2x.jpg 2x" alt="изображение">
+              </picture>
+            </div>
+            <div class="slider__slide">
+              <picture>
+                <img srcset="img/2.jpg 1x, img/2@2x.jpg 2x" alt="изображение">
+              </picture>
+            </div>
+            <div class="slider__slide">
+              <picture>
+                <img srcset="img/3.jpg 1x, img/3@2x.jpg 2x" alt="изображение">
+              </picture>
+            </div>
+            <div class="slider__slide">
+              <picture>
+                <img srcset="img/4.jpg 1x, img/4@2x.jpg 2x" alt="изображение">
+              </picture>
+            </div>
+            <div class="slider__slide">
+              <video width="730px" height="450px" controls="controls" poster="img/icon/video.svg">
+                <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                Видео невозможно воспроизвести в вашем браузере
+              </video>
+            </div>
           </div>
-  
+          
+          <div class="slider__controlls">
+            <button class="slider__button-prev button-controller">
+              <svg width="14" height="8">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </button>
+            <button class="slider__button-next button-controller">
+              <svg width="14" height="8">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </button>
+          
+            <div class="slider__controller slider__controller-1">
+              <img src="img/1preview.jpg" alt="">
+            </div> 
+            <div class="slider__controller slider__controller-2">
+              <img src="img/2preview.jpg" alt="">
+            </div> 
+            <div class="slider__controller slider__controller-3">
+              <img src="img/3preview.jpg" alt="">
+            </div> 
+            <div class="slider__controller slider__controller-4">
+              <img src="img/4preview.jpg" alt="">
+            </div> 
+            <div class="slider__controller slider__controller-5">
+              <img src="img/icon/video.svg" alt="">
+            </div> 
+          </div>
         </div>
         
         <div class="product__info">
