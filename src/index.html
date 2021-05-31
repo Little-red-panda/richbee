@@ -268,16 +268,16 @@
 
     <section class="tabs">
       <h2 class="visually-hidden">О товаре</h2>
-      <div class="tabs__wrapper">
+      <div class="tabs__wrapper" id="tabs">
 
-        <div class="tabs__list">
-          <span class="tabs__tab">О товаре</span>
-          <span class="tabs__tab">Наличие товара</span>
-        </div>
+        <ul class="tabs__list">
+          <li class="tabs__tab"><a href="#tab-1">О товаре</a></li>
+          <li class="tabs__tab"><a href="#tab-2">Наличие товара</a></li>
+        </ul>
   
         <div class="tabs__content">
   
-          <div class="tabs__item tabs__item-info">
+          <div class="tabs__item tabs__item-info" id="tab-1">
             <h3 class="tabs__item-info-title">Описание товара</h3>
             <div class="tabs__item-wrapper">
               <p class="tabs__item-info-text">
@@ -292,7 +292,7 @@
             </div>
           </div>
   
-          <div class="tabs__item tabs__item-instock">
+          <div class="tabs__item tabs__item-instock"  id="tab-2">
             <table class="tabs__item-instock-table instock-table">
               <th class="instock-table__title">Адрес</th>
               <th class="instock-table__title">График работы</th>
@@ -638,6 +638,7 @@
   </section>
 
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

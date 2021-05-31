@@ -1,34 +1,61 @@
 "use strict";
-// Табы
-$(".tabs__wrapper .tabs__tab").click(function() {
-  $(".tabs__wrapper .tabs__tab").removeClass("active").eq($(this).index()).addClass("active");
-  $(".tabs__item").hide().eq($(this).index()).fadeIn();
-}).eq(0).addClass("active");
+// Табы (код без библиотеки)
+// $(".tabs__wrapper .tabs__tab").click(function() {
+//   $(".tabs__wrapper .tabs__tab").removeClass("active").eq($(this).index()).addClass("active");
+//   $(".tabs__item").hide().eq($(this).index()).fadeIn();
+// }).eq(0).addClass("active");
+
+// Табы (библиотека jQuery Ui)
+$(function(){
+  $('#tabs').tabs();
+});
 
 // Модальное окно
+const header = document.querySelector('header');
+const main = document.querySelector('main');
+const footer = document.querySelector('footer');
+const modalLogin = document.querySelector('.modal-login');
+const modalShim = document.querySelector('.modal-shim');
+const modalLoginOpenButton = document.querySelector('.login__button');
+const modalLoginCloseButton = document.querySelector('.modal-login__close-button');
 const OPPENED_MODAL = 'modal-login-is-oppened';
+
+const toggleClass = () => {
+  header.classList.toggle(OPPENED_MODAL);
+  main.classList.toggle(OPPENED_MODAL);
+  footer.classList.toggle(OPPENED_MODAL);
+};
+const changeVisibilityModal = (display) => {
+  modalLogin.style.display = display;
+  modalShim.style.display = display;
+};
+const modalKeyDown = (evt) => {
+  if (evt.keyCode === 27) {
+    closeModal();
+  }
+};
+const handleModalKeyDown = (evt) => modalKeyDown(evt)
 const closeModal = () => {
-  $('header, main, footer').removeClass(OPPENED_MODAL);
-  $('.modal-login, .modal-shim').hide();
-  $(document).off('keydown');
+  toggleClass();
+  changeVisibilityModal('none');
+  document.removeEventListener('keydown', handleModalKeyDown)
 };
 
-$('.login__button').click(() => {
-  $('header, main, footer').addClass(OPPENED_MODAL);
-  $('.modal-login, .modal-shim').show();
-  $(document).on('keydown', (evt) => {
-    if (evt.keyCode == 27)
-    closeModal();
-  });
+modalLoginOpenButton.addEventListener('click', () => {
+  toggleClass();
+  changeVisibilityModal('block');
+  document.addEventListener('keydown', handleModalKeyDown)
 });
-$('.modal-login__close-button, .modal-shim').click(closeModal);
+modalShim.addEventListener('click', closeModal);
+modalLoginCloseButton.addEventListener('click', closeModal);
+
 
 // Слайдер
 const slider = document.querySelector('.slider');
 const slides = slider.querySelectorAll(".slider__slide");
 const controllers = slider.querySelectorAll(".slider__controller");
-const btnPrev = $('.slider__button-prev');
-const btnNext = $('.slider__button-next');
+const btnPrev = document.querySelector('.slider__button-prev');
+const btnNext = document.querySelector('.slider__button-next');
 let slideIndex = 1;
 
 const showSlides = (n) => {
@@ -49,8 +76,8 @@ const showSlides = (n) => {
 }
 
 showSlides(slideIndex);
-btnPrev.click(() => showSlides(slideIndex -= 1));
-btnNext.click(() => showSlides(slideIndex += 1));
+btnPrev.addEventListener('click', () => showSlides(slideIndex -= 1));
+btnNext.addEventListener('click', () => showSlides(slideIndex += 1));
 for (let i = 0; i < controllers.length; i++) {
   controllers[i].addEventListener('click', () => showSlides(slideIndex = i));
 };
