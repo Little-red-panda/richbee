@@ -24,6 +24,10 @@
     @include font(1.4rem, 1.6rem, 400);
     color: $light-grey;
   }
+  &:hover {
+    border: 0.1rem solid #B8B8B8;
+    cursor: $cursor;
+  }
   &:focus {
     border: 0.1rem solid #B8B8B8;
     outline: none;
