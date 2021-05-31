@@ -39,7 +39,6 @@
   @include indents();
   display: flex;
   width: 120rem;
-  // overflow: hidden;
   list-style: none;
 }
 
@@ -54,6 +53,10 @@
 
   padding: 1.5rem 2rem 3.2rem 2rem;
   margin-right: 2rem;
+}
+
+.analogs__item-hidden {
+  display: none;
 }
 
 .analogs__link {

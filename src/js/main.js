@@ -5,7 +5,6 @@ $(".tabs__wrapper .tabs__tab").click(function() {
   $(".tabs__item").hide().eq($(this).index()).fadeIn();
 }).eq(0).addClass("active");
 
-
 // Модальное окно
 const OPPENED_MODAL = 'modal-login-is-oppened';
 const closeModal = () => {
@@ -28,9 +27,8 @@ $('.modal-login__close-button, .modal-shim').click(closeModal);
 const slider = document.querySelector('.slider');
 const slides = slider.querySelectorAll(".slider__slide");
 const controllers = slider.querySelectorAll(".slider__controller");
-const btnPrev = slider.querySelector('.slider__button-prev');
-const btnNext = slider.querySelector('.slider__button-next');
-
+const btnPrev = $('.slider__button-prev');
+const btnNext = $('.slider__button-next');
 let slideIndex = 1;
 
 const showSlides = (n) => {
@@ -51,8 +49,41 @@ const showSlides = (n) => {
 }
 
 showSlides(slideIndex);
-btnPrev.addEventListener('click', () => showSlides(slideIndex -= 1));
-btnNext.addEventListener('click', () => showSlides(slideIndex += 1));
+btnPrev.click(() => showSlides(slideIndex -= 1));
+btnNext.click(() => showSlides(slideIndex += 1));
 for (let i = 0; i < controllers.length; i++) {
   controllers[i].addEventListener('click', () => showSlides(slideIndex = i));
-}
+};
+
+// Слайдер для аналогов
+const list = document.querySelector('.analogs__list');
+let items = list.querySelectorAll('.analogs__item');
+const prev = document.querySelector('.analogs__button--prev');
+const next = document.querySelector('.analogs__button--next');
+
+const hideItems = (items) => {
+  for (let i = items.length -1; i > 3; i--) {
+    items[i].classList.add('analogs__item-hidden');
+  }
+};
+const showItems = (items) => {
+  for (let i = items.length -1; i > 3; i--) {
+    items[i].classList.remove('analogs__item-hidden');
+  }
+};
+const pressBtnNext = () => {
+  showItems(items);
+  list.appendChild(items[0]);
+  items = document.querySelectorAll('.analogs__item');
+  hideItems(items);
+};
+const pressBtnPrev = () => {
+  showItems(items);
+  list.insertBefore(items[items.length-1], items[0]);
+  items = document.querySelectorAll('.analogs__item');
+  hideItems(items);
+};
+
+hideItems(items);
+next.addEventListener('click', pressBtnNext);
+prev.addEventListener('click', pressBtnPrev);
