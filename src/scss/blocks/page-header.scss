@@ -1,6 +1,11 @@
 .page-header {
+  position: relative;
   width: 100%;
   box-shadow: 0 1.3rem 2.2rem rgba(228, 228, 228, 0.25);
+}
+
+.page-header__toggle {
+  display: none;
 }
 
 .page-header__about-company {
@@ -9,4 +14,84 @@
 
 .page-header__main-nav {
   margin-top: 3.4rem;
+}
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    min-width: $mobile-width;
+    min-height: 37.5rem;
+
+    background-color: $dark-grey;
+  }
+  
+  .page-header--closed {
+    min-height: 5.5rem;
+  }
+  
+  .page-header.catalog-opened {
+    min-height: 61rem;
+  }
+
+  .page-header__main-nav {
+    margin-top: 0rem;
+    width: 100%;
+  }
+
+  .page-header__toggle {
+    @include indents();
+    position: absolute;
+    display: block;
+    width: 2.4rem;
+    height: 2.6rem;
+    top: 1rem;
+    left: 1rem;
+    border: none;
+
+    background-color: transparent;
+    text-align: center;
+
+    margin: 1rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 2.4rem;
+      height: 0.2rem;
+      right: 0px;
+      top: 0px;
+
+      background-color: $light-grey;
+      box-shadow: 0 1.2rem $light-grey, 0 0.6rem $light-grey;
+    }
+  }
+
+  .page-header__toggle--opened {
+    &::before,
+    &::after {
+    content: "";
+    position: absolute;
+    left: -0.2rem;
+    top: 0.6rem;
+    width: 27px;
+    height: 2px;
+    
+    background-color: $light-grey;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+        box-shadow: none;
+    }
+    &::after {
+        transform: rotate(-45deg);
+    }
+  }
+  .page-header.no-js {
+    height: 61rem;
+  }
+  .no-js {
+    .page-header__toggle {
+      display: none;
+    }
+  }
 }

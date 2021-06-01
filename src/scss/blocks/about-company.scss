@@ -56,3 +56,79 @@
 .about-company__social {
   margin-right: 2.7rem;
 }
+
+@media (max-width: $tablet-width) {
+  .about-company {
+    @include indents();
+  }
+  .about-company__container {
+    @include indents();
+    width: 100%;
+    position: absolute;
+    display: block;
+    top: 11.6rem;
+
+    background-color: $dark-grey;
+  }
+
+  .about-company__info-list {
+    display: block;
+    width: 100%;
+
+    background-color: $dark-grey;
+
+    margin-bottom: 0.6rem;
+    li {
+      min-height: 3rem;
+      border-bottom: 1px solid #666666;
+
+      padding-right: 0rem;
+    }
+  }
+  
+  .about-company__info-list a {
+    @include indents();
+    @include font(1.2rem, 3rem, 700);
+    display: block;
+
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+
+    padding: 0 $mobile-padding;
+  }
+  
+  .about-company__add-call {
+    @include indents();
+    display: block;
+    width: 9rem;
+    border-bottom: none;
+    
+    padding: 0.2rem 0 0.6rem $mobile-padding;
+    margin-bottom: 5.6rem;
+  }
+  
+  .about-company__social {
+    position: absolute;
+    width: 20%;
+    bottom: 6.8rem;
+    left: 40%;
+    margin-right: 0rem;
+  }
+
+  .catalog-opened .about-company__container{
+    top: 11.6rem + 23.5;
+  }
+
+  .page-header--closed .about-company{
+    display: none;
+  }
+
+  .no-js.page-header--closed .about-company {
+    display: block;
+    
+    &__container {
+      top: 11.6rem + 23.5;
+    }
+  }
+}

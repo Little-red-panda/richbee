@@ -64,3 +64,40 @@
   font-weight: 400;
   color: #ACACAC;
 }
+
+@media (max-width: $tablet-width) {
+  .cart {
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  .cart__link {
+    display: block;
+    background-color: transparent;
+  }
+  
+  .cart__icon {
+    position: relative;
+    height: auto;
+    padding: 0;
+    top: 0.6rem;
+    left: 0.5rem;
+
+    svg {
+      stroke: $light-grey;
+      fill: $light-grey;
+    }
+  }
+  
+  .cart__popup {
+    right: -0.1rem;
+  }
+  
+  .cart__icon::after {
+    display: none;
+  }
+  
+  .cart__info {
+    display: none;
+  }
+}

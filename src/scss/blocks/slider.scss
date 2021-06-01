@@ -37,6 +37,7 @@
 .slider__button-next {
   top: 42rem;
   svg {
+    fill: $dark-grey;
     transform: rotate(180deg);
   }
 }

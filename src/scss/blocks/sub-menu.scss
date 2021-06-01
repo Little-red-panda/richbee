@@ -23,3 +23,40 @@
     }
   }
 }
+
+@media (max-width: $tablet-width) {
+  .sub-menu__list {
+    @include indents();
+    display: none;
+  }
+  
+  .sub-menu__item {
+    @include indents();
+
+    border-bottom: 1px solid #666666;
+
+    text-align: center;
+
+    padding: 0;
+
+    a {
+      @include font(1.2rem, 2.5rem, 700);
+      display: block;
+      min-height: 2.5rem;
+      
+      background-color: $light-grey;
+      color: $dark-grey;
+      text-align: center;
+
+      padding: 0 $mobile-padding;
+    }
+  }
+
+  .catalog-opened .sub-menu__list {
+    display: block;
+  }
+
+  .no-js .sub-menu__list {
+    display: block;
+  }
+}
