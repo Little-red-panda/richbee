@@ -23,12 +23,24 @@
 .contacts__list a {
   @include font(1.4rem, 1.6rem, 700);
   display: block;
+  
   text-decoration: none;
   color: #FFFFFF;
-  
-  transition: 0.2s;
-    &:hover {
-    color: $light-grey;
+}
+
+@media (max-width: $tablet-width) {
+  .contacts__list {
+    position: absolute;
+    display: block;
+    bottom: 6rem;
+    right: $mobile-padding;
+  }
+
+  .contacts__email {
+    padding-right: 0rem;
+    ::after {
+      display: none;
+    }
   }
 }
 

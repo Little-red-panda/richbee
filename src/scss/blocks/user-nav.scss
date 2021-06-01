@@ -53,3 +53,54 @@
 .user-nav__login {
   margin-right: 1.5rem;
 }
+
+@media (max-width: $tablet-width) {
+  .user-nav {
+    flex-wrap: nowrap;
+  }
+
+  .user-nav__search {
+    @include indents();
+    position: absolute;
+    width: 90%;
+    top: 32rem;
+    left: $mobile-padding;
+  }
+
+  .user-nav__search-input {
+    @include indents();
+    width: 90%;
+    height: 4rem;
+  
+    padding-left: $mobile-padding;
+  }
+  
+  .user-nav__search-btn {
+    @include indents();
+    width: 4rem;
+    height: 4rem;
+  
+    margin-right: 0;
+  
+    svg{
+      margin-top: 0.5rem;
+    }
+  }
+
+  .user-nav__login {
+    margin-right: 0rem;
+  }
+
+  .page-header--closed .user-nav__search {
+    display: none;
+  }
+
+  .catalog-opened .user-nav__search {
+    top: 32rem + 23.5;
+  }
+  
+  .no-js.page-header--closed .user-nav__search {
+    display: flex;
+    top: 32rem + 23.5;
+  }
+}

@@ -27,5 +27,20 @@
       fill: #FFFFFF;
     }
   }
+}
+
+@media (max-width: $tablet-width) {
+  .social__list {
+    @include indents();
+    min-width: 20%;
+  }
   
+  .social__item {
+    @include indents();
+    padding-right: 10%;
+  
+    &:last-child {
+      padding: 0;
+    }
+  }
 }

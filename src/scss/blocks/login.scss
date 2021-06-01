@@ -24,6 +24,7 @@
   position: relative;
   height: inherit;
   padding: 1.1rem 1.2rem 1rem 1.3rem;
+  fill: #383838;
 }
 
 .login__icon::after {
@@ -55,4 +56,32 @@
   padding-top: 0.4rem;
   font-weight: 400;
   color: #ACACAC;
+}
+
+@media (max-width: $tablet-width) {
+  .login {
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  .login__button {
+    @include indents();
+    display: block;
+    background-color: transparent;
+  }
+
+  .login__icon {
+    position: relative;
+    height: auto;
+    padding: 0;
+    fill: $light-grey;
+  }
+
+  .login__icon::after {
+    display: none;
+  }
+  
+  .login__text {
+    display: none;
+  }
 }

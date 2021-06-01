@@ -73,7 +73,7 @@ const showSlides = (n) => {
   }
   slides[slideIndex].style.display = "block";
   controllers[slideIndex].className += " active-slide";
-}
+};
 
 showSlides(slideIndex);
 btnPrev.addEventListener('click', () => showSlides(slideIndex -= 1));
@@ -114,3 +114,22 @@ const pressBtnPrev = () => {
 hideItems(items);
 next.addEventListener('click', pressBtnNext);
 prev.addEventListener('click', pressBtnPrev);
+
+// Кнопки меню 
+const menuBtn = document.querySelector('.page-header__toggle');
+const catalogBtn = document.querySelector('.main-menu__display-catalogs-toggle');
+const catalog = document.querySelector('.mein-menu__link--catalog');
+
+const changeDisplayMenu = () => {
+  menuBtn.classList.toggle('page-header__toggle--opened');
+  header.classList.toggle('page-header--closed');
+  header.classList.remove('catalog-opened');
+}
+const changeDisplayCatalog = () => {
+  header.classList.toggle('catalog-opened');
+}
+
+header.classList.remove('no-js');
+menuBtn.addEventListener('click', changeDisplayMenu);
+catalogBtn.addEventListener('click', changeDisplayCatalog);
+catalog.addEventListener('click', changeDisplayCatalog);
