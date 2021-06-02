@@ -4,7 +4,7 @@
 
 }
 
-.login__button {
+.login__link {
   @include indents();
   display: flex;
   width: inherit;
@@ -64,7 +64,7 @@
     height: 4rem;
   }
   
-  .login__button {
+  .login__link {
     @include indents();
     display: block;
     background-color: transparent;
@@ -73,6 +73,8 @@
   .login__icon {
     position: relative;
     height: auto;
+    top: 0.6rem;
+    left: 0.5rem;
     padding: 0;
     fill: $light-grey;
   }

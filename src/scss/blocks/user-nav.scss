@@ -28,6 +28,10 @@
     border: 0.1rem solid #B8B8B8;
     outline: none;
   }
+  &:hover {
+    border: 1px solid #B8B8B8;
+    cursor: $cursor;
+  }
 }
 
 .user-nav__search-btn {

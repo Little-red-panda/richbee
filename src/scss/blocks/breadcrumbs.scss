@@ -8,7 +8,6 @@
   @include indents();
   display: flex;
   list-style: none;
-
 }
 
 .breadcrumbs__item {
@@ -17,7 +16,6 @@
   &::after {
     content: "/";
     position: absolute;
-    @include font(1.4rem, 1.6rem, 500);
     color: #8F8F8F;
     top: 0.2rem;
     right: 0.5rem;
@@ -26,7 +24,7 @@
 
 .breadcrumbs__link {
   @include font(1.4rem, 1.6rem, 400);
-  // display: block;
+  display: block;
   text-decoration: none;
   color: #8F8F8F;
   &--current {
@@ -37,5 +35,35 @@
 
   &:hover {
     color: $dark-grey;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .breadcrumbs {
+    @include indents();
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .breadcrumbs__list {
+    @include indents();
+    display: block;
+  }
+
+  .breadcrumbs__item {
+    display: inline-block;
+    padding-right: 1.5rem;
+    &::after {
+      right: 0.3rem;
+    }
+  }
+
+  .breadcrumbs__link {
+    @include font(1rem, 1.2rem, 400);
+    display: inline-block;
+
+    &--current {
+      font-weight: 500;
+    }
   }
 }

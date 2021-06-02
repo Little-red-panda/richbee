@@ -133,4 +133,22 @@ input[type="radio"].visually-hidden {
     width: 100%;
     padding: 0 $mobile-padding;
   }
+
+  .button-controller {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+  
+    border: none;
+  
+    background: none;
+    box-shadow: none;
+  
+    svg {
+      fill: none;
+    }
+    &:hover {
+      box-shadow: none;
+    }
+  }
 }

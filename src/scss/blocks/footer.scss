@@ -6,6 +6,8 @@
 
 .footer__container {
   display: flex;
+  
+  align-items: center;
 }
 
 .footer__title {
@@ -30,4 +32,47 @@
   @include indents();
   margin-left: auto;
   margin-right: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .footer {
+    padding: 2rem 0;
+    background: $yellow;
+    color: $dark-grey;
+  }
+  
+  .footer__container {
+    position: relative;
+    display: block;
+    width: 100%
+  }
+  
+  .footer__title {
+    @include indents();
+    @include font(2.2rem, 1.2, 700);
+    width: auto;
+    
+    background-position: 0 center;
+  
+
+    padding: 1.3rem 0;
+    padding-left: 8.5rem;
+    margin-bottom: 0rem
+  }
+  
+  .footer__text {
+    @include indents();
+    @include font(1.4rem, 1.4, 400);
+    position: absolute;
+    top: 50%;
+    left: 6%;
+
+    width: 40%;
+  }
+  
+  .footer__subscribe {
+    @include indents();
+    margin-left: auto;
+    margin-right: 0;
+  }
 }
