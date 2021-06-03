@@ -5,25 +5,12 @@ $(function(){
 });
 
 // Слайдер (библиотека Slick)
-$('.single-item').slick({
+$('.slider__slides').slick({
   dots: true
 });
 
 // Слайдер для аналогов
-if (window.innerWidth <= 768) {
-  $('.lazy').slick({
-    lazyLoad: 'ondemand',
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    adaptiveHeight: true
-  });
-} else if (window.innerWidth < 1440){
-  $('.lazy').slick({
-    lazyLoad: 'ondemand',
-    slidesToShow: 3,
-    slidesToScroll: 1
-  });
-} else {
+const initializeSliderAnalog = () => {
   const list = document.querySelector('.analogs__list');
   let items = list.querySelectorAll('.analogs__item');
   const prev = document.querySelector('.analogs__button--prev');
@@ -56,6 +43,48 @@ if (window.innerWidth <= 768) {
   next.addEventListener('click', pressBtnNext);
   prev.addEventListener('click', pressBtnPrev);
 }
+
+const addResponsiveness = () => {
+  $('.analogs__list').slick({
+    responsive: [
+      {
+        breakpoint: 1439,
+        settings: {
+          lazyLoad: 'ondemand',
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          adaptiveHeight: true,
+        }
+      }
+    ]
+  });
+}
+
+if (window.innerWidth >= 1440){
+  initializeSliderAnalog(); 
+} else {
+  addResponsiveness();
+}
+
+$(window).resize(function() {
+  if(window.innerWidth <= 1439) {
+    if (!$('.analogs__list').hasClass('slick-initialized')) {
+      addResponsiveness();
+    }
+  } else {
+    if ($('.analogs__list').hasClass('slick-initialized')) {
+      $('.analogs__list').slick('unslick');
+      initializeSliderAnalog();
+    }
+  }
+});
 
 // Кнопки меню 
 const menuBtn = document.querySelector('.page-header__toggle');
@@ -114,24 +143,3 @@ modalLoginOpen.addEventListener('click', () => {
 });
 modalShim.addEventListener('click', closeModal);
 modalLoginCloseButton.addEventListener('click', closeModal);
-
-// Обновление страницы при изменении ширины окна (для перерисовки слайдера аналогов)
-const reloadPage = () => {
-  window.location.reload();
-};
-const debounce = (func, wait) => {
-  let timeout;
-  return function() {
-    const context = this;
-    const args = arguments;
-
-    const later = function() {
-      timeout = null;
-      func.apply(context, args);
-    };
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-  };
-};
-const debounceReloadPage = debounce(reloadPage, 100);
-window.addEventListener('resize', debounceReloadPage);
