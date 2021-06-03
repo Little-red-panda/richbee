@@ -87,7 +87,7 @@ input[type="radio"].visually-hidden {
 
 .button {
   @include indents();
-  @include font(1.4rem, 1.6rem, 700);
+  @include font(1.4rem, 4.5rem, 700);
   display: block;
   height: 4.5rem;
 

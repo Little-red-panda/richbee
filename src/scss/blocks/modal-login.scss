@@ -63,7 +63,7 @@
   margin-bottom: 2rem;
 
   &::placeholder {
-  @include font(1.6rem, 3rem, 400);
+  @include font(1.6rem, 5.2rem, 400);
   color: #ACACAC;
   }
   &:hover {
@@ -175,7 +175,7 @@
     margin-bottom: 1.5rem;
   
     &::placeholder {
-      @include font(1.4rem, 3rem, 400);
+      @include font(1.4rem, 4.2rem, 400);
     }
   }
 

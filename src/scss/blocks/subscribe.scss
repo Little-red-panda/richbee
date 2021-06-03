@@ -11,7 +11,7 @@
   padding-left: 2rem;
   margin-right: 2rem;
   &::placeholder {
-    @include font(1.4rem, 1.6rem, 400);
+    @include font(1.4rem, 4.3rem, 400);
   }
   &:hover {
     border: 0.1rem solid #B8B8B8;
