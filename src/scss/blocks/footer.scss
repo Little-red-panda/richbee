@@ -34,7 +34,7 @@
   margin-right: 0;
 }
 
-@media (max-width: $desktop-width) {
+@media screen and (max-width: $desktop-width) {
   .footer {
     padding: 3rem 0;
 
@@ -72,7 +72,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media screen and (max-width: $tablet-width) {
   .footer {
     padding: 2rem 0;
   }

@@ -58,7 +58,7 @@
   color: #ACACAC;
 }
 
-@media (max-width: $desktop-width) {
+@media screen and (max-width: $desktop-width) {
   .login {
     width: 4.8rem;
     height: 4.8rem;
@@ -85,7 +85,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media screen and (max-width: $tablet-width) {
   .login {
     width: 4rem;
     height: 4rem;

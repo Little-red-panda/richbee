@@ -38,7 +38,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media screen and (max-width: $tablet-width) {
   .breadcrumbs {
     @include indents();
     margin-top: 1.5rem;

@@ -57,7 +57,7 @@
   margin-right: 2.7rem;
 }
 
-@media (max-width: $desktop-width) {
+@media screen and (max-width: $desktop-width) {
   .about-company {
     @include indents();
   }
@@ -93,7 +93,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media screen and (max-width: $tablet-width) {
   .about-company {
     @include indents();
   }

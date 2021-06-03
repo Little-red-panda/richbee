@@ -127,7 +127,7 @@ input[type="radio"].visually-hidden {
   }
 }
 
-@media (max-width: $desktop-width) {
+@media screen and (max-width: $desktop-width) {
   .container {
     min-width: $tablet-width;
     width: 100%;
@@ -135,7 +135,7 @@ input[type="radio"].visually-hidden {
   }
 }
 
-@media (max-width: $tablet-width) {
+@media screen and (max-width: $tablet-width) {
   .container {
     min-width: $mobile-width;
     width: 100%;

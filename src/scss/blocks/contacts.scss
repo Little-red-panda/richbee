@@ -28,7 +28,7 @@
   color: $white-text;
 }
 
-@media (max-width: $desktop-width) {
+@media screen and (max-width: $desktop-width) {
   .contacts__list {
     @include indents();
     display: block; 
@@ -45,7 +45,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media screen and (max-width: $tablet-width) {
   .contacts__list {
     position: absolute;
     display: block;

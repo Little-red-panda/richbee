@@ -38,7 +38,7 @@
   }
 }
 
-@media (max-width: $desktop-width) {
+@media screen and (max-width: $desktop-width) {
   .subscribe {
     display: block;
   }
@@ -54,7 +54,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media screen and (max-width: $tablet-width) {
   .subscribe {
     display: block;
   }

@@ -65,7 +65,7 @@
   color: #ACACAC;
 }
 
-@media (max-width: $desktop-width) {
+@media screen and (max-width: $desktop-width) {
   .cart {
     width: 4.8rem;
     height: 4.8rem;
@@ -97,7 +97,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media screen and (max-width: $tablet-width) {
   .cart {
     width: 4rem;
     height: 4rem;

@@ -29,7 +29,7 @@
   }
 }
 
-@media (max-width: $desktop-width) {
+@media screen and (max-width: $desktop-width) {
   .social__list {
     @include indents();
   
@@ -52,7 +52,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media screen and (max-width: $tablet-width) {
   .social__list {
     @include indents();
     min-width: 20%;

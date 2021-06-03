@@ -4,7 +4,7 @@
   padding-bottom: 2.1rem;
 }
 
-@media (max-width: $desktop-width) {
+@media screen and (max-width: $desktop-width) {
   .site-nav {
     display: block;
     width: 100%;
@@ -12,7 +12,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media screen and (max-width: $tablet-width) {
   .site-nav {
     display: block;
     padding-bottom: 0rem;

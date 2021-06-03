@@ -140,7 +140,7 @@
   filter: blur(1.5px);
 }
 
-@media (max-width: $tablet-width) {
+@media screen and (max-width: $tablet-width) {
   .modal-login {
     width: 100%;
     height: auto;

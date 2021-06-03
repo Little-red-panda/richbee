@@ -94,7 +94,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media screen and (max-width: $tablet-width) {
   .tabs__wrapper {
     @include indents();
     margin-bottom: 4rem;

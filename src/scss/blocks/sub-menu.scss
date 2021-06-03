@@ -24,7 +24,7 @@
   }
 }
 
-@media (max-width: $desktop-width) {
+@media screen and (max-width: $desktop-width) {
   .sub-menu__list {
 
     flex-wrap: wrap;
@@ -37,7 +37,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media screen and (max-width: $tablet-width) {
   .sub-menu__list {
     @include indents();
     display: none;

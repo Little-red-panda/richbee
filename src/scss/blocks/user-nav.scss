@@ -62,7 +62,7 @@
   margin-right: 1.5rem;
 }
 
-@media (max-width: $desktop-width) {
+@media screen and (max-width: $desktop-width) {
   .user-nav {
     display: flex;
     justify-content: flex-end;
@@ -84,7 +84,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media screen and (max-width: $tablet-width) {
   .user-nav {
     flex-wrap: nowrap;
   }

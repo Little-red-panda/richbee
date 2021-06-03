@@ -235,7 +235,7 @@
   }
 }
 
-@media (max-width: $desktop-width) {
+@media screen and (max-width: $desktop-width) {
   .analogs {
     margin-top: 4rem;
     padding-bottom: 0rem; 
@@ -406,7 +406,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media screen and (max-width: $tablet-width) {
   .analogs {
     margin-top: 4rem;
     padding-bottom: 0rem; 

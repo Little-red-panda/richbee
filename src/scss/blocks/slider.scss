@@ -108,7 +108,7 @@
   border: 1px solid #767676;
 }
 
-@media (max-width: $desktop-width) {
+@media screen and (max-width: $desktop-width) {
   .slider {
     position: relative;
   }
@@ -174,7 +174,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media screen and (max-width: $tablet-width) {
   .slider {
     width: 80%;
     margin: 0 auto;

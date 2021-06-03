@@ -28,7 +28,7 @@
   margin-bottom: 1.8rem;
 }
 
-@media (max-width: $desktop-width) {
+@media screen and (max-width: $desktop-width) {
   .main-nav__wrapper {
     @include indents();
     display: flex;
@@ -48,7 +48,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media screen and (max-width: $tablet-width) {
   .main-nav {
     border-bottom: 1px solid #666666;
   }
