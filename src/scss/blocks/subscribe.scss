@@ -21,6 +21,10 @@
     outline: none;
     background-color: $bg-grey;
   }
+  &:hover {
+    border: 1px solid #B8B8B8;
+    cursor: $cursor;
+  }
 }
 
 .subscribe__button {
@@ -30,6 +34,41 @@
 
   &:hover {
     background: $dark-grey;
-    color: #FFFFFF;
+    color: $white-text;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .subscribe {
+    display: block;
+  }
+  .subscribe__email,
+  .subscribe__button {
+    @include indents();
+    width: 100%;
+  }
+
+  .subscribe__email {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .subscribe {
+    display: block;
+  }
+
+  .subscribe__email,
+  .subscribe__button {
+    display: block;
+    width: 50%;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .subscribe__email {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
   }
 }

@@ -1,4 +1,4 @@
-.main-naw__wrapper {
+.main-nav__wrapper {
   @include indents();
   display: flex;
   margin-bottom: 3.6rem;
@@ -18,15 +18,34 @@
 
 .main-nav__logo-text {
   padding-left: 1rem;
-  padding-top: 0.2rem
+  padding-top: 0.2rem;
 }
-
 
 .main-nav__site-nav {
   @include indents();
   min-height: 2.4rem;
   margin-top: 3.6rem;
   margin-bottom: 1.8rem;
+}
+
+@media (max-width: $desktop-width) {
+  .main-nav__wrapper {
+    @include indents();
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3.6rem;
+  }
+  
+  .main-nav__logo {
+    margin-right: 2.8rem;
+  }
+  
+  .main-nav__site-nav {
+    @include indents();
+    min-height: 2.4rem;
+    margin-top: 3.6rem;
+    margin-bottom: 1.8rem;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -37,7 +56,6 @@
     width: 100%;
 
     @include indents();
-    display: flex;
     align-items: center;
     justify-content: flex-end;
 
@@ -49,7 +67,7 @@
     position: absolute;
     left: 50%;
 
-    fill: #fff;
+    fill: #FFFFFF;
     
     transform: translateX(-50%);
 

@@ -4,13 +4,20 @@
 }
 
 .product__title {
+  @include indents();
   @include font(2.4rem, 2.8rem, 500);
   color: #0B0B0B;
+
+  margin-bottom: 2rem
 }
 
 .product__wrapper {
   @include indents();
   display: flex;
+}
+
+.product__slider {
+  padding-left: 0.3rem;
 }
 
 .product__info {
@@ -112,7 +119,7 @@
   display: none;
   position: absolute;
   width: 24rem;
-  height: 11.1rem;
+  height: max-content;
   top: 3.1rem;
   left: -2.1rem;
 
@@ -156,7 +163,7 @@
   @include indents();
   @include font(1.4rem, 1.5, 500);
   position: relative;
-  width: 6.8rem;
+  width: max-content;
   
   border-bottom: 0.1rem dashed;
   color: $dark-grey;
@@ -188,5 +195,319 @@
 
   &:hover {
     font-weight: 500;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .product {
+    margin-top: 2.5rem;
+    margin-bottom: 6rem;
+  }
+
+  .product__wrapper {
+    @include indents();
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .product__slider {
+    padding-left: 0.3rem;
+    margin-top: 0.5rem
+  }
+
+  .product__info {
+    @include indents();
+    width: auto;
+    margin-left: 2rem;
+    padding: 1rem 2.5rem 2rem 2.5rem;
+  }
+
+  .product__description {
+    @include indents();
+    margin-bottom: 1.5rem;
+  }
+  
+  .product__code {
+    @include indents();
+    @include font(1.4rem, 1.4, 400);
+  }
+  
+  .product__article {
+    @include indents();
+    @include font(1.4rem, 1.4, 400);
+  }
+  
+  .product__text {
+    @include indents();
+    @include font(1.4rem, 1.6rem, 400);
+    width: 100%;
+  
+    padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+    margin-right: 0rem;
+    margin-bottom: 3rem
+  }
+  
+  .product__price {
+    @include indents();
+    margin: 1rem 0 2rem 0rem;
+  }
+
+  .product__full-price-price {
+    @include indents();
+    @include font(2.4rem, 1.8rem, 700);
+  }
+  
+  .product__wholesale-price {
+    margin-left: 35%;
+  }
+  
+  .product__wholesale-price-price {
+    @include font(1.8rem, 1.8rem, 700);
+  }
+  
+  .product__wholesale-info-popup {
+    @include indents();
+    @include font(1.2rem, 1.25, 400);
+    display: none;
+    width: 20rem;
+    top: 2.6rem;
+    left: -17rem;
+  
+    padding: 1rem 1rem 1rem 1.5rem;
+  
+    &::after {
+      top: -0.4rem;
+      left: auto;
+      right: 1.5rem;
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+  
+  .product__button {
+    width: 100%;
+  
+    border-radius: 0.3rem;
+  
+    margin-top: 1rem;
+  }
+  
+  .product__instock {
+    margin-left: 0rem;
+  }
+  
+  .product__instock-status {
+    @include indents();
+    @include font(1.4rem, 1.5, 500);
+    position: relative;
+    width: max-content;
+    
+    border-bottom: 0.1rem dashed;
+    color: $dark-grey;
+  
+    margin-left: 2.7rem;
+    margin-bottom: 1rem;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1.8rem;
+      height: 1.8rem;
+      background: url("img/icon/check.svg") no-repeat;
+      top: 0.2rem;
+      left: -2.7rem;
+    }
+  }
+  
+  .product__instock-locations-list {
+    @include indents();
+    list-style: none;
+  }
+  
+  .product__instock-locations-item a {
+    @include font(1.3rem, 1.5, 400);
+    text-decoration: none;
+    color: inherit;
+  
+    margin-bottom: 0.3rem;
+  
+    &:hover {
+      font-weight: 500;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .product {
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .product__title {
+    @include indents();
+    @include font(1.4rem, 1.2, 500);
+    position: absolute;
+    top: 27rem;
+
+    color: #0B0B0B;
+  
+    padding-right: 2rem;
+    margin-left: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .product__wrapper {
+    @include indents();
+    display: block;
+  }
+
+  .product__slider {
+    margin-bottom: 9.5rem;
+  }
+
+  .product__info {
+    @include indents();
+    position: relative;
+    width: 100%;
+  
+    box-shadow: none;
+  }
+  
+  .product__description {
+    @include indents();
+    width: 45%;
+    height: 5.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1.4rem;
+    margin-bottom: 1.6rem;
+  }
+  
+  .product__code {
+    @include indents();
+    @include font(1.2rem, 1.2, 400);
+    display: block;
+
+    margin-right: 2rem;
+  }
+  
+  .product__article {
+    @include indents();
+    @include font(1.2rem, 1.2, 400);
+    display: block;
+  }
+  
+  .product__text {
+    @include indents();
+    width: 80%;
+
+    text-align: center;
+  
+    padding: 0.8rem 1.4rem 0.8rem 1.4rem;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+  
+  .product__price {
+    @include indents();
+    width: 100%
+  }
+
+  .product__price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+  .product__full-price {
+    display: block;
+  
+    small {
+      @include font(1.2rem, 1.2, 400);
+    }
+  }
+  
+  .product__full-price-price {
+    @include font(2.5rem, 2.7rem, 700);
+  }
+  
+  .product__wholesale-price {
+    display: block;
+    margin-left: auto;
+    padding-right: 2.6rem;
+    
+    small {
+      @include font(1.2rem, 1.2, 400);
+    }
+  }
+  
+  .product__wholesale-price-price {
+    @include font(2rem, 2.3rem, 700);
+  }
+  
+  .product__wholesale-info {
+    right: 0rem;
+  }
+  
+  .product__wholesale-info-popup {
+    @include indents();
+    @include font(1.2rem, 1.25, 400);
+    display: none;
+    width: 20rem;
+    top: 2.6rem;
+    left: -17rem;
+  
+    padding: 1rem 1rem 1rem 1.5rem;
+  
+    &::after {
+      top: -0.4rem;
+      left: auto;
+      right: 1.5rem;
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+  
+  .product__button {
+    width: 95%;
+    
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  
+  
+  .product__instock {
+    @include indents();
+    position: absolute;
+    width: 45%;
+    top: 0;
+    right: 4%;
+
+    text-align: left;
+  }
+  
+  .product__instock-status {
+    @include indents();
+    @include font(1.2rem, 1.2, 500);
+
+    text-align: right;
+  
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 0.6rem;
+    &::before {
+      top: -0.1rem;
+    }
+  }
+  
+  .product__instock-locations-list {
+    text-align: right;
+  }
+  
+  .product__instock-locations-item a {
+    @include font(1.2rem, 1.2, 400);
   }
 }

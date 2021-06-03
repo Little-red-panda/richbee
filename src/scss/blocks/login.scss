@@ -4,7 +4,7 @@
 
 }
 
-.login__button {
+.login__link {
   @include indents();
   display: flex;
   width: inherit;
@@ -58,13 +58,40 @@
   color: #ACACAC;
 }
 
+@media (max-width: $desktop-width) {
+  .login {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+  .login__link {
+    @include indents();
+    display: block;
+    background-color: $bg-grey;
+  }
+
+  .login__icon {
+    top: 0.9rem;
+    left: 0.9rem;
+    padding: 0;
+    fill: $dark-grey;
+  }
+
+  .login__icon::after {
+    display: none;
+  }
+  
+  .login__text {
+    display: none;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .login {
     width: 4rem;
     height: 4rem;
   }
   
-  .login__button {
+  .login__link {
     @include indents();
     display: block;
     background-color: transparent;
@@ -73,6 +100,8 @@
   .login__icon {
     position: relative;
     height: auto;
+    top: 0.6rem;
+    left: 0.5rem;
     padding: 0;
     fill: $light-grey;
   }

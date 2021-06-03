@@ -25,7 +25,24 @@
   display: block;
   
   text-decoration: none;
-  color: #FFFFFF;
+  color: $white-text;
+}
+
+@media (max-width: $desktop-width) {
+  .contacts__list {
+    @include indents();
+    display: block; 
+  }
+  .contacts__email {
+    padding-right: 0rem;
+    ::after {
+      display: none;
+    }
+  }
+  .contacts__list a {
+    @include font(1.2rem, 1.4rem, 700);
+    text-align: right;
+  }
 }
 
 @media (max-width: $tablet-width) {
