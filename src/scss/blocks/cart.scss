@@ -65,6 +65,37 @@
   color: #ACACAC;
 }
 
+@media (max-width: $desktop-width) {
+  .cart {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+  .cart__link {
+    @include indents();
+    display: block;
+    background-color: $bg-grey;
+  }
+
+  .cart__icon {
+    top: 0.9rem;
+    left: 0.9rem;
+    padding: 0;
+    fill: $dark-grey;
+  }
+
+  .cart__popup {
+    right: -0.2rem;
+  }
+
+  .cart__icon::after {
+    display: none;
+  }
+  
+  .cart__info {
+    display: none;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .cart {
     width: 4rem;

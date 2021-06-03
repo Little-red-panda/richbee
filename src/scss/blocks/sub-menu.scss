@@ -24,6 +24,19 @@
   }
 }
 
+@media (max-width: $desktop-width) {
+  .sub-menu__list {
+
+    flex-wrap: wrap;
+    margin-left: 0rem;
+  }
+  
+  .sub-menu__item {
+    @include font(1.2rem, 1.4rem, 400);
+    padding-right: 1rem;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .sub-menu__list {
     @include indents();

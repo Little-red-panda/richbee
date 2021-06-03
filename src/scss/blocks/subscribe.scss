@@ -34,6 +34,22 @@
   }
 }
 
+@media (max-width: $desktop-width) {
+  .subscribe {
+    display: block;
+  }
+  .subscribe__email,
+  .subscribe__button {
+    @include indents();
+    width: 100%;
+  }
+
+  .subscribe__email {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .subscribe {
     display: block;
@@ -48,6 +64,7 @@
   }
 
   .subscribe__email {
+    padding-left: 2rem;
     margin-bottom: 1rem;
   }
 }

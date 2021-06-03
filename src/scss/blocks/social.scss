@@ -29,6 +29,29 @@
   }
 }
 
+@media (max-width: $desktop-width) {
+  .social__list {
+    @include indents();
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    min-width: 1%;
+  
+    list-style: none;
+  }
+  
+  .social__item {
+    @include indents();
+    padding-right: 15%;
+  
+    &:last-child {
+      padding: 0;
+    }
+  }
+}
+
 @media (max-width: $tablet-width) {
   .social__list {
     @include indents();

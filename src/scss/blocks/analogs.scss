@@ -235,6 +235,177 @@
   }
 }
 
+@media (max-width: $desktop-width) {
+  .analogs {
+    margin-top: 4rem;
+    padding-bottom: 0rem; 
+    margin-bottom: 4rem;
+  }
+  
+  .analogs__title {
+    @include indents();
+    @include font(2rem, 1.4, 700);
+  
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .analogs__button {
+    display: none;
+  }
+  
+  .analogs__list {
+    @include indents();
+    width: 100% !important;
+    margin-left: 1rem;
+  }
+
+  .analogs__list .slick-prev,
+  .analogs__list .slick-next {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 47%;
+  left: -1.5rem;
+
+  z-index: 5;
+
+  border: none;
+  border-radius: 50%;
+
+  transform: rotate(-90deg);
+
+  background: #FFFFFF;
+  background-image: url("img/icon/slider-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0.8rem 1rem;
+
+  color: transparent;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+
+  transition: 0.2s;
+
+  &:hover {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  }
+}
+
+  .analogs__list .slick-next {
+    left: auto;
+    right: 0.6rem;
+
+    transform: rotate(90deg);
+}
+  
+  .analogs__item {
+    width: auto;
+    height: auto;
+    padding: 0.5% 0.8% 0.5% 0.8%;
+  }
+  
+  .analogs__link {
+    @include indents();
+    min-height: 18rem;
+    margin-bottom: 1rem;
+  }
+  
+  .analogs__link-img {
+    width: 70%;
+    margin-bottom: 1rem;
+    margin: 0 auto;
+    margin-bottom: 2%;
+  }
+  
+  .analogs__link-caption {
+    @include font(1.2rem, 1.2, 400);
+  }
+  
+  .analogs__instock {
+    @include font(1.1rem, 1.1rem, 400);
+    margin-bottom: 0.5rem;
+  }
+  
+  .analogs__full-price {
+    @include indents();
+    @include font(1.6rem, 1, 700);
+  }
+  
+  .analogs__wholesale-price {
+    @include indents();
+    @include font(1.2rem, 1.2rem, 400);
+    margin-bottom: 1rem;
+  }
+  
+  .analogs__wholesale__info {
+    right: -2rem;
+  }
+  
+  .analogs__wholesale__info-popup {
+    @include indents();
+    @include font(1rem, 1.2, 400);
+    width: 20rem;
+    height: 4.8rem;
+    top: 2rem;
+    left: -10.8rem;
+  
+    padding: 0.6rem 1rem 0.3rem 1.5rem;
+  
+    &::after {
+      top: -0.4rem;
+      left: auto;
+      right: 8rem;
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+
+  
+  .analogs__price-button {
+    @include indents();
+    @include font(1.2rem, 1.6rem, 700);
+    width: 100%;
+    height: 3.5rem;
+  }
+  
+  .analogs__item--out-of-stock {
+    .analogs__instock {
+      @include font(1.1rem, 1.1rem, 700);
+    }
+    .analogs__price-button {
+      @include font(1.1rem, 1.1rem, 700);
+    }
+  }
+  
+  .analogs__item--sale {
+    .analogs__item-icon-sale {
+      width: 2.2rem;
+      height: 2.2rem;
+  
+      svg {
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+      }
+  
+      span {
+        @include font(1.2rem, 1.5rem, 500);
+        top: 0.4rem;
+        right: 1.2rem;
+      }
+    }
+  
+    .analogs__full-price-sale,
+    .analogs__wholesale-price-sale {
+      @include font(1rem, 1.2rem, 400);
+      top: 0.4rem;
+    }
+  
+    .analogs__wholesale-price-sale {
+      top: 2rem;
+      right: -1.5rem;
+    }
+  }
+}
+
 @media (max-width: $tablet-width) {
   .analogs {
     margin-top: 4rem;

@@ -58,6 +58,28 @@
   margin-right: 1.5rem;
 }
 
+@media (max-width: $desktop-width) {
+  .user-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 73%;
+  }
+  
+  .user-nav__search {
+    @include indents();
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .user-nav__search-input {
+    @include indents();
+    flex-grow: 1;
+    width: auto;
+    padding-left: 2rem;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .user-nav {
     flex-wrap: nowrap;

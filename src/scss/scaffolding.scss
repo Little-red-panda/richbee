@@ -80,7 +80,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: $desktop-width;
+  width: 144rem;
   margin: 0 auto;
   padding: 0 12rem;
 }
@@ -124,6 +124,14 @@ input[type="radio"].visually-hidden {
   }
   &:hover {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .container {
+    min-width: $tablet-width;
+    width: 100%;
+    padding: 0 $tablet-padding;
   }
 }
 

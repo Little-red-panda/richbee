@@ -37,6 +37,38 @@
  display: none;   
 }
 
+@media (max-width: $desktop-width) {
+  .main-menu__list{
+    margin-bottom: 1rem;
+    &::after {
+      display: none;
+    }
+  }
+  
+  // .main-menu__item {
+  //   @include font(1.4rem, 1.6rem, 700);
+  //   min-height: inherit;
+  //   padding-right: 2.5rem;
+  //   text-transform: uppercase;
+  //   white-space: nowrap;
+  //   a {
+  //     min-height: inherit;
+  //     vertical-align: middle;
+  //     text-decoration: none;
+  //     color: $dark-grey;
+  
+  //     transition: 0.2s;
+  //     &:hover {
+  //       color: $light-grey;
+  //     }
+  //   }
+  // }
+  
+  .main-menu__display-catalogs-toggle {
+   display: none;   
+  }
+}
+
 @media (max-width: $tablet-width) {
   .main-menu__list{
     @include indents();
