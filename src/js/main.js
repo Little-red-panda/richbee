@@ -115,6 +115,18 @@ const modalLoginOpen = document.querySelector('.login__link');
 const modalLoginCloseButton = document.querySelector('.modal-login__close-button');
 const OPPENED_MODAL = 'modal-login-is-oppened';
 
+const email = document.querySelector('#user-email');
+const password = document.querySelector('#user-password');
+const form = document.querySelector('.modal-login__form')
+let isStorageSupport = true;
+let storage = "";
+
+try {
+    storage = localStorage.getItem("email");
+} catch (err) {
+    isStorageSupport = false;
+}
+
 const toggleClass = () => {
   header.classList.toggle(OPPENED_MODAL);
   main.classList.toggle(OPPENED_MODAL);
@@ -139,7 +151,20 @@ const closeModal = () => {
 modalLoginOpen.addEventListener('click', () => {
   toggleClass();
   changeVisibilityModal('block');
+  if (storage) {
+    email.value = storage;
+    password.focus();
+  } else {
+    console.log('2')
+    email.focus();
+  }
   document.addEventListener('keydown', handleModalKeyDown)
 });
 modalShim.addEventListener('click', closeModal);
 modalLoginCloseButton.addEventListener('click', closeModal);
+
+form.addEventListener("submit", () => {
+  if (isStorageSupport) {
+    localStorage.setItem("email", email.value);
+  }
+});
