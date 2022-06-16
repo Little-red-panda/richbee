@@ -6,5 +6,4 @@
 
 #### Для сборки - gulp build
 
-### Собранный проект -
-https://little-red-panda.github.io/richbee__show/
+### Собранный проект можно посмотреть здесь - https://little-red-panda.github.io/richbee__show/
