@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
-  <link rel="stylesheet" href="index.css">
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+  <link rel="stylesheet" href="css/index.css">
   <title>Richbee</title>
 </head>
+
 <body>
   @@include('parts/sprite.html')
   <header class="page-header page-header--closed no-js">
@@ -60,7 +62,7 @@
             </li>
           </ul>
         </div>
-      </div> 
+      </div>
     </div>
 
     <nav class="page-header__main-nav main-nav container">
@@ -69,27 +71,22 @@
           <svg width="43" height="44">
             <use xlink:href="#logo"></use>
           </svg>
-          <svg width="115" height="44"  class="main-nav__logo-text">
+          <svg width="115" height="44" class="main-nav__logo-text">
             <use xlink:href="#logo-text"></use>
           </svg>
         </a>
-  
+
         <div class="main-nav__user-nav user-nav">
           <div class="user-nav__search">
-            <input 
-              type="text" 
-              name="search" 
-              id="search" 
-              placeholder="Поиск товаров по сайту" 
-              class="user-nav__search-input"
-            >
+            <input type="text" name="search" id="search" placeholder="Поиск товаров по сайту"
+              class="user-nav__search-input">
             <button type="button" class="user-nav__search-btn button">
               <svg width="15" height="15">
                 <use xlink:href="#search"></use>
               </svg>
             </button>
           </div>
-  
+
           <div class="user-nav__login login">
             <a href="#" class="login__link">
               <span class="login__icon">
@@ -103,7 +100,7 @@
               </div>
             </a>
           </div>
-  
+
           <div class="user-nav__cart cart">
             <a href="#" class="cart__link">
               <span class="cart__icon">
@@ -120,14 +117,14 @@
           </div>
         </div>
       </div>
-      
+
       <div class="main-nav__site-nav site-nav">
 
         <div class="site-nav__main-menu main-menu">
           <ul class="main-menu__list">
             <li class="main-menu__item">
               <a href="#" class="mein-menu__link mein-menu__link--catalog">
-              Каталог товаров
+                Каталог товаров
               </a>
               <span class="main-menu__display-catalogs-toggle">
                 <svg width="14" height="8">
@@ -162,13 +159,14 @@
 
   <main class="container">
     <h1 class="visually-hidden">Инструменты</h1>
-   
+
     <div class="breadcrumbs">
       <ul class="breadcrumbs__list">
         <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
         <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог</a></li>
         <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Инструменты</a></li>
-        <li class="breadcrumbs__item--current"><a href="#" class="breadcrumbs__link breadcrumbs__link--current">Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]</a></li>
+        <li class="breadcrumbs__item--current"><a href="#" class="breadcrumbs__link breadcrumbs__link--current">Набор
+            инструментов МАСТАК 94 предмета 01-094C [01-094C]</a></li>
       </ul>
     </div>
 
@@ -182,22 +180,26 @@
           <div class="slider__slides">
             <div class="slider__slide">
               <picture>
-                <img srcset="img/1.jpg 1x, img/1@2x.jpg 2x" src="img/1.jpg" alt="Общий план набора инструментов МАСТАК 94">
+                <img srcset="img/1.jpg 1x, img/1@2x.jpg 2x" src="img/1.jpg"
+                  alt="Общий план набора инструментов МАСТАК 94">
               </picture>
             </div>
             <div class="slider__slide">
               <picture>
-                <img srcset="img/2.jpg 1x, img/2@2x.jpg 2x" src="img/2.jpg" alt="Набор инструментов МАСТАК 94 в открытом виде">
+                <img srcset="img/2.jpg 1x, img/2@2x.jpg 2x" src="img/2.jpg"
+                  alt="Набор инструментов МАСТАК 94 в открытом виде">
               </picture>
             </div>
             <div class="slider__slide">
               <picture>
-                <img srcset="img/3.jpg 1x, img/3@2x.jpg 2x" src="img/3.jpg" alt="Комплектация набора инструментов МАСТАК 94">
+                <img srcset="img/3.jpg 1x, img/3@2x.jpg 2x" src="img/3.jpg"
+                  alt="Комплектация набора инструментов МАСТАК 94">
               </picture>
             </div>
             <div class="slider__slide">
               <picture>
-                <img srcset="img/4.jpg 1x, img/4@2x.jpg 2x" src="img/4.jpg" alt="Комплектация набора инструментов МАСТАК 94 в футляре">
+                <img srcset="img/4.jpg 1x, img/4@2x.jpg 2x" src="img/4.jpg"
+                  alt="Комплектация набора инструментов МАСТАК 94 в футляре">
               </picture>
             </div>
             <div class="slider__slide">
@@ -208,15 +210,15 @@
             </div>
           </div>
         </div>
-        
+
         <div class="product__info">
-  
+
           <div class="product__description">
             <p class="product__code">Внутренний код товара: <span>21215</span></p>
             <p class="product__article">Артикул: <span>01-094C</span></p>
           </div>
           <p class="product__text">Цена указана за набор инструментов из 94-х предметов</p>
-          
+
           <div class="product__price">
             <div class="product__price-wrapper">
               <div class="product__full-price">
@@ -238,7 +240,7 @@
             </div>
             <button class="product__button button">В корзину</button>
           </div>
-  
+
           <div class="product__instock">
             <p class="product__instock-status">В наличии</p>
             <div class="product__instock-locations">
@@ -254,7 +256,7 @@
           </div>
 
         </div>
-      </div> 
+      </div>
     </section>
 
     <section class="tabs">
@@ -265,25 +267,25 @@
           <li class="tabs__tab"><a href="#tab-1">О товаре</a></li>
           <li class="tabs__tab"><a href="#tab-2">Наличие товара</a></li>
         </ul>
-  
+
         <div class="tabs__content">
-  
+
           <div class="tabs__item tabs__item-info" id="tab-1">
             <h3 class="tabs__item-info-title">Описание товара</h3>
             <div class="tabs__item-wrapper">
               <p class="tabs__item-info-text">
-                Переносной кейс предназначен для размещения набора ручного инструмента Мастак 01-094 °C, 
-                состоящего из 94 предметов, а также других, на усмотрение мастера, комплектаций. 
+                Переносной кейс предназначен для размещения набора ручного инструмента Мастак 01-094 °C,
+                состоящего из 94 предметов, а также других, на усмотрение мастера, комплектаций.
                 Применяется в мастерских, выездными ремонтными бригадами, для работ в быту и т. д.
               </p>
               <p class="tabs__item-info-text">
-                Кейс изготовлен из качественного и ударопрочного ABS-пластика, обладает ярким дизайном, 
+                Кейс изготовлен из качественного и ударопрочного ABS-пластика, обладает ярким дизайном,
                 имеет металлические замки с фиксатором CLIP-LOCK, ручка для переноски
               </p>
             </div>
           </div>
-  
-          <div class="tabs__item tabs__item-instock"  id="tab-2">
+
+          <div class="tabs__item tabs__item-instock" id="tab-2">
             <table class="tabs__item-instock-table instock-table">
               <tr>
                 <th class="instock-table__title">Адрес</th>
@@ -291,18 +293,18 @@
                 <th class="instock-table__title">Наличие</th>
                 <th class="instock-table__title">Телефон</th>
               </tr>
-              
+
               <tr class="instock-table__tr">
                 <td class="instock-table__td instock-table__td--address">
                   <p class="instock-table__td--address-location">
                     Центральный склад
                   </p>
-                  <p class="instock-table__td--address-location-address">  
+                  <p class="instock-table__td--address-location-address">
                     Приморский край, ст. Жулевская, ул. Транспортная, 5-Г.<br>
                     Магазин находится в головном здании.
                   </p>
                 </td>
-  
+
                 <td class="instock-table__td instock-table__td--schedule">
                   <p class="instock-table__td--schedule-days">
                     Пн-пт
@@ -311,27 +313,27 @@
                     7:00 - 17:00
                   </p>
                 </td>
-  
+
                 <td class="instock-table__td instock-table__td--instock">
                   В наличии
                 </td>
-  
+
                 <td class="instock-table__td instock-table__td--phone">
                   8-(800) 251-44-75
                 </td>
               </tr>
-  
+
               <tr class="instock-table__tr">
                 <td class="instock-table__td instock-table__td--address">
                   <p class="instock-table__td--address-location">
                     м Октябрьское поле
                   </p>
-                  <p class="instock-table__td--address-location-address">  
+                  <p class="instock-table__td--address-location-address">
                     Город Москва,<br>
                     ул. Народного Ополчения, 48 корпус 1
                   </p>
                 </td>
-  
+
                 <td class="instock-table__td instock-table__td--schedule">
                   <p class="instock-table__td--schedule-days">
                     Пн-вс
@@ -340,27 +342,27 @@
                     круглосуточно
                   </p>
                 </td>
-  
+
                 <td class="instock-table__td instock-table__td--instock">
                   В наличии
                 </td>
-  
+
                 <td class="instock-table__td instock-table__td--phone">
                   8-(800) 251-44-75
                 </td>
               </tr>
-  
+
               <tr class="instock-table__tr">
                 <td class="instock-table__td instock-table__td--address">
                   <p class="instock-table__td--address-location">
                     м Петровско-Разумовская
                   </p>
-                  <p class="instock-table__td--address-location-address">  
+                  <p class="instock-table__td--address-location-address">
                     Город Москва,<br>
                     ул. Линии Октябрьской Железной Дороги, д. 2с2
                   </p>
                 </td>
-  
+
                 <td class="instock-table__td instock-table__td--schedule">
                   <p class="instock-table__td--schedule-days">
                     Пн-вс
@@ -369,27 +371,27 @@
                     круглосуточно
                   </p>
                 </td>
-  
+
                 <td class="instock-table__td instock-table__td--instock">
                   В наличии
                 </td>
-  
+
                 <td class="instock-table__td instock-table__td--phone">
                   8-(800) 251-44-75
                 </td>
               </tr>
-  
+
               <tr class="instock-table__tr">
                 <td class="instock-table__td instock-table__td--address">
                   <p class="instock-table__td--address-location">
                     м Профсоюзная
                   </p>
-                  <p class="instock-table__td--address-location-address">  
+                  <p class="instock-table__td--address-location-address">
                     Город Москва<br>
                     Ломоносовский просп., д. 5
                   </p>
                 </td>
-  
+
                 <td class="instock-table__td instock-table__td--schedule">
                   <p class="instock-table__td--schedule-days">
                     Пн-вс
@@ -398,21 +400,21 @@
                     круглосуточно
                   </p>
                 </td>
-  
+
                 <td class="instock-table__td instock-table__td--instock instock-table__td--instock_out-of-stock">
                   Нет в наличии
                 </td>
-  
+
                 <td class="instock-table__td instock-table__td--phone">
                   8-(800) 251-44-75
                 </td>
               </tr>
-  
+
             </table>
           </div>
-  
+
         </div>
-      </div>  
+      </div>
 
     </section>
 
@@ -427,24 +429,20 @@
         </button>
 
         <ul class="analogs__list">
-  
+
           <li class="analogs__item">
             <a href="#" class="analogs__link">
               <figure class="analogs__link-figure">
                 <picture>
-                  <img 
-                    srcset="img/analog1.jpg 1x, img/analog1@2x.jpg 2x"
-                    src="img/analog1.jpg"
-                    alt="Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]"
-                    class="analogs__link-img"
-                  >
+                  <img srcset="img/analog1.jpg 1x, img/analog1@2x.jpg 2x" src="img/analog1.jpg"
+                    alt="Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]" class="analogs__link-img">
                 </picture>
                 <figcaption class="analogs__link-caption">
                   Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]
                 </figcaption>
               </figure>
             </a>
-  
+
             <div class="analogs__price">
               <p class="analogs__instock">В наличии</p>
               <p class="analogs__full-price">1 150 ₽</p>
@@ -461,24 +459,20 @@
               <button class="analogs__price-button button">В корзину</button>
             </div>
           </li>
-  
+
           <li class="analogs__item">
             <a href="#" class="analogs__link">
               <figure class="analogs__link-figure">
                 <picture>
-                  <img
-                    srcset="img/analog2.jpg 1x, img/analog2@2x.jpg 2x"
-                    src="img/analog2.jpg"
-                    alt="Маяк импульсный светодиодный на магните 10-30V 2-режима"
-                    class="analogs__link-img"
-                  >
+                  <img srcset="img/analog2.jpg 1x, img/analog2@2x.jpg 2x" src="img/analog2.jpg"
+                    alt="Маяк импульсный светодиодный на магните 10-30V 2-режима" class="analogs__link-img">
                 </picture>
                 <figcaption class="analogs__link-caption">
                   Маяк импульсный светодиодный на магните 10-30V 2-режима
                 </figcaption>
               </figure>
             </a>
-  
+
             <div class="analogs__price">
               <p class="analogs__instock">В наличии</p>
               <p class="analogs__full-price">1 150 ₽</p>
@@ -495,24 +489,21 @@
               <button class="analogs__price-button button">В корзину</button>
             </div>
           </li>
-  
+
           <li class="analogs__item analogs__item--out-of-stock">
             <a href="#" class="analogs__link">
               <figure class="analogs__link-figure">
                 <picture>
-                  <img
-                    srcset="img/analog3.jpg 1x, img/analog3@2x.jpg 2x"
-                    src="img/analog3.jpg"
+                  <img srcset="img/analog3.jpg 1x, img/analog3@2x.jpg 2x" src="img/analog3.jpg"
                     alt="Указатель габаритов с повторителем поворота «Бегущие огни» на  светодиодах"
-                    class="analogs__link-img"
-                  >
+                    class="analogs__link-img">
                 </picture>
                 <figcaption class="analogs__link-caption">
-                  Указатель габаритов с повторителем поворота «Бегущие огни» на  светодиодах
+                  Указатель габаритов с повторителем поворота «Бегущие огни» на светодиодах
                 </figcaption>
               </figure>
             </a>
-  
+
             <div class="analogs__price">
               <p class="analogs__instock">Нет в наличии</p>
               <p class="analogs__full-price">1 150 ₽</p>
@@ -529,7 +520,7 @@
               <button class="analogs__price-button analogs__price-button button">Сообщить о появлении</button>
             </div>
           </li>
-  
+
           <li class="analogs__item analogs__item--sale">
             <a href="#" class="analogs__link">
               <div class="analogs__item-icon-sale">
@@ -540,20 +531,18 @@
               </div>
               <figure class="analogs__link-figure">
                 <picture>
-                  <img 
-                    srcset="img/analog4.jpg 1x, img/analog4@2x.jpg 2x"
-                    src="img/analog4.jpg"
+                  <img srcset="img/analog4.jpg 1x, img/analog4@2x.jpg 2x" src="img/analog4.jpg"
                     alt="Фара противотуманная дальнего света круглая с желтым габаритом (двухрежимная) 12-24 В, 27 Вт, 4 узкая"
-                    class="analogs__link-img"
-                  >
+                    class="analogs__link-img">
                 </picture>
-                
+
                 <figcaption class="analogs__link-caption">
-                  Фара противотуманная дальнего света круглая с желтым габаритом (двухрежимная) 12-24 В, 27 Вт, 4&nbsp;узкая
+                  Фара противотуманная дальнего света круглая с желтым габаритом (двухрежимная) 12-24 В, 27 Вт,
+                  4&nbsp;узкая
                 </figcaption>
               </figure>
             </a>
-  
+
             <div class="analogs__price">
               <p class="analogs__instock">В наличии</p>
               <p class="analogs__full-price">
@@ -571,12 +560,12 @@
                     Для получения оптовых цен, добавьте в корзину товаров ещё на 10 000 руб (по оптовым ценам)
                   </p>
                 </div>
-                
+
               </div>
               <button class="analogs__price-button button">В корзину</button>
             </div>
           </li>
-  
+
         </ul>
         <button class="analogs__button analogs__button--next button-controller">
           <svg width="13" height="8">
@@ -587,20 +576,14 @@
     </section>
 
   </main>
-  
+
   <footer class="footer">
     <div class="container footer__container">
       <h2 class="footer__title">Будьте в курсе<br> новостей и акций</h2>
       <p class="footer__text">Подпишитесь на рассылку и получайте первым информацию об акциях Richbee</p>
-  
+
       <form action="#" method="POST" class="footer__subscribe subscribe">
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Электронная почта"
-          class="subscribe__email"
-        >
+        <input type="email" name="email" id="email" placeholder="Электронная почта" class="subscribe__email">
         <button type="submit" class="subscribe__button button">Подписаться</button>
       </form>
     </div>
@@ -616,16 +599,18 @@
       </button>
       <h2 class="modal-login__title">Вход в личный кабинет</h2>
       <form class="modal-login__form" action="#" method="POST">
-          <label class="modal-login__email-label" for="user-email">Email</label>
-          <input class="modal-login__email-input" id="user-email" type="email" name="email" value="nikolayivanovich@yandex.ru" placeholder="Email">
-          <label  class="modal-login__email-label" for="user-password">Пароль</label>
-          <input class="modal-login__password-input" id="user-password" type="password" name="password" value="" placeholder="Пароль">
-          <a href="#" class="modal-login__password-restore">Забыли пароль?</a>
-          <button class="modal-login__btn-login button" type="submit">Войти</button>
-          <a href="#" class="modal-login__link-logup">Зарегестрироваться</a>
+        <label class="modal-login__email-label" for="user-email">Email</label>
+        <input class="modal-login__email-input" id="user-email" type="email" name="email"
+          value="nikolayivanovich@yandex.ru" placeholder="Email">
+        <label class="modal-login__email-label" for="user-password">Пароль</label>
+        <input class="modal-login__password-input" id="user-password" type="password" name="password" value=""
+          placeholder="Пароль">
+        <a href="#" class="modal-login__password-restore">Забыли пароль?</a>
+        <button class="modal-login__btn-login button" type="submit">Войти</button>
+        <a href="#" class="modal-login__link-logup">Зарегестрироваться</a>
       </form>
     </div>
-    
+
     <div class="modal-shim"></div>
   </section>
 
@@ -634,4 +619,5 @@
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
